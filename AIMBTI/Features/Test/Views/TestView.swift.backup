@@ -12,7 +12,8 @@ struct TestView: View {
     
     var body: some View {
         NavigationView {
-            if viewModel.showStageComplete {
+            VStack {
+                if viewModel.showStageComplete {
                 StageCompleteView(
                     currentStage: viewModel.currentStage,
                     totalStages: viewModel.totalStages,
@@ -30,7 +31,7 @@ struct TestView: View {
                 )
             } else {
                 VStack(spacing: 0) {
-                    // 添加退出按钮行
+                    // 添加自定义导航栏
                     HStack {
                         Button(action: {
                             if viewModel.answers.isEmpty {
@@ -39,14 +40,16 @@ struct TestView: View {
                                 showExitAlert = true
                             }
                         }) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "chevron.left")
-                                    .font(.system(size: 16, weight: .medium))
-                                Text(LanguageManager.shared.currentLanguage == .chinese ? "退出" : "Exit")
-                                    .font(.system(size: 16, weight: .medium))
-                            }
-                            .foregroundColor(Theme.primaryColor)
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 24))
+                                .foregroundColor(Theme.textSecondary)
                         }
+                        
+                        Spacer()
+                        
+                        Text(LocalizedStrings.shared.get("personality_test"))
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundColor(Theme.textPrimary)
                         
                         Spacer()
                         
@@ -54,20 +57,19 @@ struct TestView: View {
                         Button(action: {
                             viewModel.randomlyAnswerAllQuestions()
                         }) {
-                            HStack(spacing: 4) {
-                                Image(systemName: "wand.and.stars")
-                                    .font(.system(size: 14))
-                                Text(LanguageManager.shared.currentLanguage == .chinese ? "随机" : "Random")
-                                    .font(.system(size: 14))
-                            }
-                            .foregroundColor(Theme.primaryColor)
+                            Image(systemName: "wand.and.stars")
+                                .font(.system(size: 20))
+                                .foregroundColor(Theme.primaryColor)
                         }
+                        #else
+                        // 占位符，保持标题居中
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.clear)
                         #endif
                     }
                     .padding(.horizontal)
                     .padding(.vertical, 10)
-                    
-                    Divider()
                     
                     VStack(spacing: 5) {
                         Text(viewModel.stageProgress)
@@ -107,39 +109,7 @@ struct TestView: View {
                 .background(Theme.backgroundColor)
             }
         }
-        .navigationTitle(LocalizedStrings.shared.get("personality_test"))
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    if viewModel.answers.isEmpty {
-                        // No answers yet, just dismiss
-                        dismiss()
-                    } else {
-                        // Show exit confirmation
-                        showExitAlert = true
-                    }
-                }) {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Theme.textPrimary)
-                }
-            }
-            
-            #if DEBUG
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    viewModel.randomlyAnswerAllQuestions()
-                }) {
-                    HStack {
-                        Image(systemName: "wand.and.stars")
-                        Text(LanguageManager.shared.currentLanguage == .chinese ? "随机答题" : "Random")
-                    }
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(Theme.primaryColor)
-                }
-            }
-            #endif
-        }
+        .navigationBarHidden(true)
         .fullScreenCover(isPresented: $viewModel.showResult) {
             if let result = viewModel.testResult,
                let analysis = viewModel.testAnalysis {
