@@ -16,12 +16,15 @@ struct LocalizedStrings {
         "professional_mbti": [.chinese: "专业MBTI人格类型测试\n深度解析你的内在世界", .english: "Professional MBTI Personality Test\nDeep Analysis of Your Inner World"],
         "start_test": [.chinese: "开始测试", .english: "Start Test"],
         "have_account": [.chinese: "已有账号？立即登录", .english: "Have an account? Login now"],
+        "test_home_subtitle": [.chinese: "通过科学的测试方法\n了解你的性格类型", .english: "Discover your personality type\nthrough scientific testing"],
+        "debug_quick_test": [.chinese: "调试：快速完成测试", .english: "Debug: Quick Test"],
         
         // Tab Bar
         "tab_test": [.chinese: "测试", .english: "Test"],
         "tab_types": [.chinese: "类型", .english: "Types"],
         "tab_history": [.chinese: "历史", .english: "History"],
         "tab_profile": [.chinese: "我的", .english: "Profile"],
+        "tab_advisor": [.chinese: "顾问", .english: "Advisor"],
         
         // Test Introduction
         "test_instructions": [.chinese: "测试说明", .english: "Test Instructions"],
@@ -41,6 +44,8 @@ struct LocalizedStrings {
         "previous": [.chinese: "上一题", .english: "Previous"],
         "next": [.chinese: "下一题", .english: "Next"],
         "complete_test": [.chinese: "完成测试", .english: "Complete Test"],
+        "exit": [.chinese: "退出", .english: "Exit"],
+        "random": [.chinese: "随机", .english: "Random"],
         
         // Results
         "test_complete": [.chinese: "测试完成", .english: "Test Complete"],

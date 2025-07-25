@@ -32,9 +32,7 @@ struct LanguageSelectionView: View {
                             .font(.system(size: 40, weight: .bold))
                             .foregroundColor(.white)
                         
-                        Text(selectedLanguage == .chinese ? "请选择您的语言偏好" : 
-                             selectedLanguage == .english ? "Please select your language preference" :
-                             "请选择您的语言偏好\nPlease select your language preference")
+                        Text("请选择您的语言偏好\nPlease select your language preference")
                             .font(.system(size: 18))
                             .foregroundColor(.white.opacity(0.9))
                             .multilineTextAlignment(.center)
@@ -45,20 +43,7 @@ struct LanguageSelectionView: View {
                     
                     // Language Selection Buttons
                     HStack(spacing: 20) {
-                        // Chinese Button
-                        LanguageButton(
-                            language: .chinese,
-                            isSelected: selectedLanguage == .chinese,
-                            action: {
-                                withAnimation(.spring()) {
-                                    selectedLanguage = .chinese
-                                }
-                                hapticFeedback()
-                                confirmSelection(.chinese)
-                            }
-                        )
-                        
-                        // English Button
+                        // English Button (Left)
                         LanguageButton(
                             language: .english,
                             isSelected: selectedLanguage == .english,
@@ -68,6 +53,19 @@ struct LanguageSelectionView: View {
                                 }
                                 hapticFeedback()
                                 confirmSelection(.english)
+                            }
+                        )
+                        
+                        // Chinese Button (Right)
+                        LanguageButton(
+                            language: .chinese,
+                            isSelected: selectedLanguage == .chinese,
+                            action: {
+                                withAnimation(.spring()) {
+                                    selectedLanguage = .chinese
+                                }
+                                hapticFeedback()
+                                confirmSelection(.chinese)
                             }
                         )
                     }

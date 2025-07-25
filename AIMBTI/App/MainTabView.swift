@@ -57,8 +57,7 @@ struct MainTabView: View {
     }
     
     private var advisorTabTitle: String {
-        LanguageManager.shared.currentLanguage == .chinese ?
-            "顾问" : "Advisor"
+        LocalizedStrings.shared.get("tab_advisor")
     }
 }
 

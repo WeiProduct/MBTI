@@ -22,9 +22,7 @@ struct TestHomeView: View {
                         .font(.system(size: 28, weight: .bold))
                         .foregroundColor(Theme.secondaryColor)
                     
-                    Text(LanguageManager.shared.currentLanguage == .chinese ? 
-                         "通过科学的测试方法\n了解你的性格类型" : 
-                         "Discover your personality type\nthrough scientific testing")
+                    Text(LocalizedStrings.shared.get("test_home_subtitle"))
                         .font(.system(size: 16))
                         .foregroundColor(Theme.textSecondary)
                         .multilineTextAlignment(.center)
@@ -54,8 +52,7 @@ struct TestHomeView: View {
                 }) {
                     HStack {
                         Image(systemName: "hammer.fill")
-                        Text(LanguageManager.shared.currentLanguage == .chinese ? 
-                             "调试：快速完成测试" : "Debug: Quick Test")
+                        Text(LocalizedStrings.shared.get("debug_quick_test"))
                     }
                     .font(.system(size: 14, weight: .medium))
                 }

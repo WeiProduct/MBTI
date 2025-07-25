@@ -42,7 +42,7 @@ struct TestView: View {
                             HStack(spacing: 8) {
                                 Image(systemName: "chevron.left")
                                     .font(.system(size: 16, weight: .medium))
-                                Text(LanguageManager.shared.currentLanguage == .chinese ? "退出" : "Exit")
+                                Text(LocalizedStrings.shared.get("exit"))
                                     .font(.system(size: 16, weight: .medium))
                             }
                             .foregroundColor(Theme.primaryColor)
@@ -57,7 +57,7 @@ struct TestView: View {
                             HStack(spacing: 4) {
                                 Image(systemName: "wand.and.stars")
                                     .font(.system(size: 14))
-                                Text(LanguageManager.shared.currentLanguage == .chinese ? "随机" : "Random")
+                                Text(LocalizedStrings.shared.get("random"))
                                     .font(.system(size: 14))
                             }
                             .foregroundColor(Theme.primaryColor)
@@ -337,13 +337,13 @@ struct NavigationButtons: View {
         HStack(spacing: 20) {
             if canGoBack {
                 Button(action: onPrevious) {
-                    Text("上一题")
+                    Text(LocalizedStrings.shared.get("previous"))
                 }
                 .buttonStyle(SecondaryButtonStyle())
             }
             
             Button(action: onNext) {
-                Text(isLastQuestion ? "完成测试" : "下一题")
+                Text(isLastQuestion ? LocalizedStrings.shared.get("complete_test") : LocalizedStrings.shared.get("next"))
             }
             .buttonStyle(PrimaryButtonStyle())
             .disabled(!canGoNext)
