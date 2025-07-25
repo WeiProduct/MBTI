@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - AIMBTI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .terms-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            line-height: 1.8;
+        }
+        .terms-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        .terms-content h2 {
+            color: var(--text-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .terms-content p, .terms-content li {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .terms-content ul {
+            padding-left: 2rem;
+        }
+        .lang-toggle {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .lang-toggle button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .lang-toggle button:hover {
+            background: var(--secondary-color);
+        }
+        .last-updated {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="terms-content">
+        <div class="lang-toggle">
+            <button onclick="toggleTermsLanguage()">中文 / English</button>
+        </div>
+        
+        <div id="english-terms">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last updated: January 25, 2025</p>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using AIMBTI ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
+            
+            <h2>2. Description of Service</h2>
+            <p>AIMBTI provides:</p>
+            <ul>
+                <li>MBTI personality testing based on established psychological frameworks</li>
+                <li>AI-powered personality insights and guidance</li>
+                <li>Educational content about personality types</li>
+                <li>Personal development suggestions</li>
+            </ul>
+            
+            <h2>3. User Responsibilities</h2>
+            <p>You agree to:</p>
+            <ul>
+                <li>Provide honest responses to test questions for accurate results</li>
+                <li>Use the App for personal, non-commercial purposes only</li>
+                <li>Not use the App to diagnose or treat any medical or psychological conditions</li>
+                <li>Not reverse engineer, decompile, or attempt to extract the source code</li>
+            </ul>
+            
+            <h2>4. Disclaimer</h2>
+            <p><strong>Important:</strong> AIMBTI is for entertainment and educational purposes only. The App:</p>
+            <ul>
+                <li>Does not provide professional psychological or medical advice</li>
+                <li>Should not be used as a substitute for professional counseling or therapy</li>
+                <li>Cannot diagnose mental health conditions</li>
+                <li>Results should be viewed as general guidance only</li>
+            </ul>
+            
+            <h2>5. Intellectual Property</h2>
+            <p>All content in AIMBTI, including but not limited to text, graphics, logos, and software, is the property of AIMBTI or its licensors and is protected by copyright laws.</p>
+            
+            <h2>6. Privacy</h2>
+            <p>Your use of the App is also governed by our Privacy Policy. Please review our Privacy Policy to understand our practices.</p>
+            
+            <h2>7. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, AIMBTI shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use the App.</p>
+            
+            <h2>8. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Continued use of the App after changes constitutes acceptance of the new terms.</p>
+            
+            <h2>9. Termination</h2>
+            <p>We may terminate or suspend your access to the App immediately, without prior notice, for any reason whatsoever.</p>
+            
+            <h2>10. Contact Information</h2>
+            <p>For questions about these Terms of Service, please contact us through our GitHub repository or support channels.</p>
+        </div>
+        
+        <div id="chinese-terms" style="display: none;">
+            <h1>服务条款</h1>
+            <p class="last-updated">最后更新：2025年1月25日</p>
+            
+            <h2>1. 接受条款</h2>
+            <p>通过下载、安装或使用AIMBTI（"本应用"），您同意受这些服务条款的约束。如果您不同意这些条款，请不要使用本应用。</p>
+            
+            <h2>2. 服务描述</h2>
+            <p>AIMBTI提供：</p>
+            <ul>
+                <li>基于成熟心理学框架的MBTI人格测试</li>
+                <li>AI驱动的人格洞察和指导</li>
+                <li>关于人格类型的教育内容</li>
+                <li>个人发展建议</li>
+            </ul>
+            
+            <h2>3. 用户责任</h2>
+            <p>您同意：</p>
+            <ul>
+                <li>诚实回答测试问题以获得准确结果</li>
+                <li>仅将应用用于个人、非商业目的</li>
+                <li>不使用应用诊断或治疗任何医疗或心理状况</li>
+                <li>不进行反向工程、反编译或试图提取源代码</li>
+            </ul>
+            
+            <h2>4. 免责声明</h2>
+            <p><strong>重要提示：</strong>AIMBTI仅供娱乐和教育目的使用。本应用：</p>
+            <ul>
+                <li>不提供专业的心理或医疗建议</li>
+                <li>不应作为专业咨询或治疗的替代品</li>
+                <li>无法诊断心理健康状况</li>
+                <li>结果仅应视为一般性指导</li>
+            </ul>
+            
+            <h2>5. 知识产权</h2>
+            <p>AIMBTI中的所有内容，包括但不限于文本、图形、标志和软件，均为AIMBTI或其许可方的财产，受版权法保护。</p>
+            
+            <h2>6. 隐私</h2>
+            <p>您对应用的使用也受我们的隐私政策约束。请查看我们的隐私政策以了解我们的做法。</p>
+            
+            <h2>7. 责任限制</h2>
+            <p>在法律允许的最大范围内，AIMBTI不对因您使用或无法使用应用而导致的任何间接、附带、特殊、后果性或惩罚性损害负责。</p>
+            
+            <h2>8. 条款变更</h2>
+            <p>我们保留随时修改这些条款的权利。在更改后继续使用应用即表示接受新条款。</p>
+            
+            <h2>9. 终止</h2>
+            <p>我们可以因任何原因立即终止或暂停您对应用的访问，恕不另行通知。</p>
+            
+            <h2>10. 联系信息</h2>
+            <p>如对这些服务条款有疑问，请通过我们的GitHub仓库或支持渠道与我们联系。</p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleTermsLanguage() {
+            const englishTerms = document.getElementById('english-terms');
+            const chineseTerms = document.getElementById('chinese-terms');
+            
+            if (englishTerms.style.display === 'none') {
+                englishTerms.style.display = 'block';
+                chineseTerms.style.display = 'none';
+            } else {
+                englishTerms.style.display = 'none';
+                chineseTerms.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

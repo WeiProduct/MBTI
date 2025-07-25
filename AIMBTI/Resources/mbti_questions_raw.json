@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text_cn": "当你要外出一整天，你会",
+      "text_en": "When going out for a whole day, you would",
+      "option_a": {
+        "dimension": "J",
+        "text_cn": "计划你要做什么和在什么时候做",
+        "text_en": "Plan what you will do and when"
+      },
+      "option_b": {
+        "dimension": "P",
+        "text_cn": "说去就去",
+        "text_en": "Just go"
+      }
+    },
+    {
+      "id": 2,
+      "text_cn": "你认为自己是一个",
+      "text_en": "You consider yourself as a",
+      "option_a": {
+        "dimension": "J",
+        "text_cn": "较为有条理的人",
+        "text_en": "Rather organized person"
+      },
+      "option_b": {
+        "dimension": "P",
+        "text_cn": "较为随兴所至的人",
+        "text_en": "Rather spontaneous person"
+      }
+    },
+    {
+      "id": 3,
+      "text_cn": "假如你是一位老师，你会选教",
+      "text_en": "If you were a teacher, you would prefer to teach",
+      "option_a": {
+        "dimension": "S",
+        "text_cn": "以事实为主的课程",
+        "text_en": "Fact-based courses"
+      },
+      "option_b": {
+        "dimension": "N",
+        "text_cn": "涉及理论的课程",
+        "text_en": "Theory-based courses"
+      }
+    },
+    {
+      "id": 4,
+      "text_cn": "你通常",
+      "text_en": "You usually",
+      "option_a": {
+        "dimension": "E",
+        "text_cn": "与人容易混熟",
+        "text_en": "Mix well with others easily"
+      },
+      "option_b": {
+        "dimension": "I",
+        "text_cn": "比较沉静或矜持",
+        "text_en": "Are rather quiet or reserved"
+      }
+    },
+    {
+      "id": 5,
+      "text_cn": "一般来说，你和哪些人比较合得来？",
+      "text_en": "Generally speaking, you get along better with?",
+      "option_a": {
+        "dimension": "S",
+        "text_cn": "富于想象力的人",
+        "text_en": "Imaginative people"
+      },
+      "option_b": {
+        "dimension": "N",
+        "text_cn": "现实的人",
+        "text_en": "Realistic people"
+      }
+    },
+    {
+      "id": 6,
+      "text_cn": "你是否经常让",
+      "text_en": "Do you often let",
+      "option_a": {
+        "dimension": "F",
+        "text_cn": "你的情感支配你的理智",
+        "text_en": "Your emotions override your logic"
+      },
+      "option_b": {
+        "dimension": "T",
+        "text_cn": "你的理智主宰你的情感",
+        "text_en": "Your logic govern your emotions"
+      }
+    },
+    {
+      "id": 7,
+      "text_cn": "处理许多事情上，你会喜欢",
+      "text_en": "When handling many things, you prefer to",
+      "option_a": {
+        "dimension": "J",
+        "text_cn": "凭兴所至行事",
+        "text_en": "Act on impulse"
+      },
+      "option_b": {
+        "dimension": "P",
+        "text_cn": "按照计划行事",
+        "text_en": "Follow a plan"
+      }
+    },
+    {
+      "id": 8,
+      "text_cn": "你是否",
+      "text_en": "Are you",
+      "option_a": {
+        "dimension": "E",
+        "text_cn": "容易让人了解",
+        "text_en": "Easy to understand"
+      },
+      "option_b": {
+        "dimension": "I",
+        "text_cn": "难于让人了解",
+        "text_en": "Hard to understand"
+      }
+    },
+    {
+      "id": 9,
+      "text_cn": "按照程序表做事",
+      "text_en": "Following a schedule",
+      "option_a": {
+        "dimension": "J",
+        "text_cn": "合你心意",
+        "text_en": "Appeals to you"
+      },
+      "option_b": {
+        "dimension": "P",
+        "text_cn": "令你感到束缚",
+        "text_en": "Makes you feel restricted"
+      }
+    },
+    {
+      "id": 10,
+      "text_cn": "当你有一份特别的任务，你会喜欢",
+      "text_en": "When you have a special task, you prefer to",
+      "option_a": {
+        "dimension": "J",
+        "text_cn": "开始前小心组织计划",
+        "text_en": "Carefully organize and plan before starting"
+      },
+      "option_b": {
+        "dimension": "P",
+        "text_cn": "边做边找须做什么",
+        "text_en": "Find out what's needed as you go"
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AIMBTI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            line-height: 1.8;
+        }
+        .policy-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        .policy-content h2 {
+            color: var(--text-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content p, .policy-content li {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .policy-content ul {
+            padding-left: 2rem;
+        }
+        .lang-toggle {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .lang-toggle button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .lang-toggle button:hover {
+            background: var(--secondary-color);
+        }
+        .last-updated {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="policy-content">
+        <div class="lang-toggle">
+            <button onclick="togglePolicyLanguage()">中文 / English</button>
+        </div>
+        
+        <div id="english-policy">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: January 25, 2025</p>
+            
+            <h2>Introduction</h2>
+            <p>Welcome to AIMBTI. We are committed to protecting your personal information and your right to privacy. This privacy policy describes how we handle your information when you use our iOS application.</p>
+            
+            <h2>Information We Collect</h2>
+            <p>AIMBTI is designed with privacy in mind. We collect minimal information:</p>
+            <ul>
+                <li><strong>Test Results:</strong> Your MBTI test responses and results are stored locally on your device.</li>
+                <li><strong>Chat History:</strong> Conversations with the AI advisor are stored locally on your device.</li>
+                <li><strong>App Usage:</strong> Basic app usage data for improving user experience (stored locally).</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            <p>All data is processed and stored locally on your device. We use this information to:</p>
+            <ul>
+                <li>Calculate your MBTI personality type</li>
+                <li>Provide personalized AI advisor responses</li>
+                <li>Track your test history and progress</li>
+                <li>Improve the app experience</li>
+            </ul>
+            
+            <h2>Data Storage and Security</h2>
+            <p>Your data security is important to us:</p>
+            <ul>
+                <li>All data is stored locally on your device using Apple's secure storage frameworks</li>
+                <li>We do not transmit personal data to external servers</li>
+                <li>AI chat requests are sent through a secure proxy that doesn't store personal information</li>
+                <li>You can delete all your data at any time by uninstalling the app</li>
+            </ul>
+            
+            <h2>Third-Party Services</h2>
+            <p>AIMBTI uses the following third-party services:</p>
+            <ul>
+                <li><strong>OpenAI API:</strong> For AI advisor functionality. Only your messages are sent to OpenAI through our secure proxy, without any personally identifiable information.</li>
+            </ul>
+            
+            <h2>Children's Privacy</h2>
+            <p>AIMBTI is suitable for users of all ages. We do not knowingly collect personal information from children under 13. The app does not require any personal information to function.</p>
+            
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your data (all data is available within the app)</li>
+                <li>Delete your data (by uninstalling the app)</li>
+                <li>Export your data (through app features)</li>
+                <li>Opt-out of any data collection (the app works entirely offline)</li>
+            </ul>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this privacy policy from time to time. We will notify you of any changes by updating the "Last updated" date of this privacy policy.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this privacy policy, please contact us through the app's support section or via our GitHub repository.</p>
+        </div>
+        
+        <div id="chinese-policy" style="display: none;">
+            <h1>隐私政策</h1>
+            <p class="last-updated">最后更新：2025年1月25日</p>
+            
+            <h2>简介</h2>
+            <p>欢迎使用AIMBTI。我们致力于保护您的个人信息和隐私权。本隐私政策描述了当您使用我们的iOS应用程序时，我们如何处理您的信息。</p>
+            
+            <h2>我们收集的信息</h2>
+            <p>AIMBTI在设计时充分考虑了隐私保护。我们收集的信息极少：</p>
+            <ul>
+                <li><strong>测试结果：</strong>您的MBTI测试回答和结果存储在您的设备本地。</li>
+                <li><strong>聊天历史：</strong>与AI顾问的对话存储在您的设备本地。</li>
+                <li><strong>应用使用情况：</strong>用于改善用户体验的基本应用使用数据（本地存储）。</li>
+            </ul>
+            
+            <h2>我们如何使用您的信息</h2>
+            <p>所有数据都在您的设备本地处理和存储。我们使用这些信息来：</p>
+            <ul>
+                <li>计算您的MBTI人格类型</li>
+                <li>提供个性化的AI顾问回复</li>
+                <li>跟踪您的测试历史和进度</li>
+                <li>改善应用体验</li>
+            </ul>
+            
+            <h2>数据存储和安全</h2>
+            <p>您的数据安全对我们很重要：</p>
+            <ul>
+                <li>所有数据都使用Apple的安全存储框架存储在您的设备本地</li>
+                <li>我们不会将个人数据传输到外部服务器</li>
+                <li>AI聊天请求通过不存储个人信息的安全代理发送</li>
+                <li>您可以随时通过卸载应用删除所有数据</li>
+            </ul>
+            
+            <h2>第三方服务</h2>
+            <p>AIMBTI使用以下第三方服务：</p>
+            <ul>
+                <li><strong>OpenAI API：</strong>用于AI顾问功能。只有您的消息通过我们的安全代理发送到OpenAI，不包含任何个人身份信息。</li>
+            </ul>
+            
+            <h2>儿童隐私</h2>
+            <p>AIMBTI适合所有年龄段的用户。我们不会故意收集13岁以下儿童的个人信息。应用程序不需要任何个人信息即可运行。</p>
+            
+            <h2>您的权利</h2>
+            <p>您有权：</p>
+            <ul>
+                <li>访问您的数据（所有数据都可在应用内访问）</li>
+                <li>删除您的数据（通过卸载应用）</li>
+                <li>导出您的数据（通过应用功能）</li>
+                <li>选择退出任何数据收集（应用完全离线工作）</li>
+            </ul>
+            
+            <h2>政策变更</h2>
+            <p>我们可能会不时更新此隐私政策。我们将通过更新此隐私政策的"最后更新"日期来通知您任何更改。</p>
+            
+            <h2>联系我们</h2>
+            <p>如果您对此隐私政策有任何疑问，请通过应用的支持部分或通过我们的GitHub仓库与我们联系。</p>
+        </div>
+    </div>
+    
+    <script>
+        function togglePolicyLanguage() {
+            const englishPolicy = document.getElementById('english-policy');
+            const chinesePolicy = document.getElementById('chinese-policy');
+            
+            if (englishPolicy.style.display === 'none') {
+                englishPolicy.style.display = 'block';
+                chinesePolicy.style.display = 'none';
+            } else {
+                englishPolicy.style.display = 'none';
+                chinesePolicy.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
