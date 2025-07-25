@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMBTI - AI-Powered MBTI Personality Test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>AIMBTI</h1>
+                <span class="tag">iOS App</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+                <a href="#about">About</a>
+                <button class="lang-switch" onclick="toggleLanguage()">中文</button>
+            </div>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Discover Your Personality Type" data-zh="发现你的人格类型">
+                    Discover Your Personality Type
+                </h1>
+                <p class="hero-subtitle" data-en="AI-powered MBTI personality test with personalized insights and guidance" data-zh="基于AI的MBTI人格测试，提供个性化洞察和指导">
+                    AI-powered MBTI personality test with personalized insights and guidance
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fab fa-apple"></i>
+                        <span data-en="Download for iOS" data-zh="iOS下载">Download for iOS</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span data-en="Learn More" data-zh="了解更多">Learn More</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>93</h3>
+                        <p data-en="Questions" data-zh="道题目">Questions</p>
+                    </div>
+                    <div class="stat">
+                        <h3>16</h3>
+                        <p data-en="Personality Types" data-zh="种人格类型">Personality Types</p>
+                    </div>
+                    <div class="stat">
+                        <h3>AI</h3>
+                        <p data-en="Personal Advisor" data-zh="个人顾问">Personal Advisor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="assets/images/app-preview.png" alt="AIMBTI App Preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-en="Powerful Features" data-zh="强大功能">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-en="Comprehensive Test" data-zh="全面测试">Comprehensive Test</h3>
+                    <p data-en="93 carefully crafted questions to accurately determine your MBTI personality type" data-zh="93道精心设计的问题，准确判定你的MBTI人格类型">
+                        93 carefully crafted questions to accurately determine your MBTI personality type
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-en="AI Personal Advisor" data-zh="AI个人顾问">AI Personal Advisor</h3>
+                    <p data-en="Get personalized guidance and insights from your AI advisor tailored to your personality type" data-zh="获得为你的人格类型量身定制的个性化指导和洞察">
+                        Get personalized guidance and insights from your AI advisor tailored to your personality type
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-en="Detailed Analysis" data-zh="详细分析">Detailed Analysis</h3>
+                    <p data-en="Understand your strengths, weaknesses, and compatibility with other types" data-zh="了解你的优势、劣势以及与其他类型的兼容性">
+                        Understand your strengths, weaknesses, and compatibility with other types
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 data-en="Progress Tracking" data-zh="进度跟踪">Progress Tracking</h3>
+                    <p data-en="Save your results and track your personality development over time" data-zh="保存你的结果并跟踪你的人格发展">
+                        Save your results and track your personality development over time
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 data-en="Bilingual Support" data-zh="双语支持">Bilingual Support</h3>
+                    <p data-en="Available in both English and Chinese for a wider audience" data-zh="支持中英文双语，服务更广泛的用户">
+                        Available in both English and Chinese for a wider audience
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Privacy First" data-zh="隐私优先">Privacy First</h3>
+                    <p data-en="Your data is stored locally and protected with industry-standard security" data-zh="你的数据本地存储，并采用行业标准安全保护">
+                        Your data is stored locally and protected with industry-standard security
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title" data-en="App Screenshots" data-zh="应用截图">App Screenshots</h2>
+            <div class="screenshots-slider">
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot-1.png" alt="Home Screen">
+                    <p data-en="Welcome Screen" data-zh="欢迎界面">Welcome Screen</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot-2.png" alt="Test Screen">
+                    <p data-en="Personality Test" data-zh="人格测试">Personality Test</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot-3.png" alt="Results Screen">
+                    <p data-en="Test Results" data-zh="测试结果">Test Results</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot-4.png" alt="AI Advisor">
+                    <p data-en="AI Advisor Chat" data-zh="AI顾问对话">AI Advisor Chat</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot-5.png" alt="Personality Types">
+                    <p data-en="Type Details" data-zh="类型详情">Type Details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="section-title" data-en="Download AIMBTI" data-zh="下载AIMBTI">Download AIMBTI</h2>
+                <p class="download-subtitle" data-en="Available for iOS devices" data-zh="适用于iOS设备">
+                    Available for iOS devices
+                </p>
+                <div class="download-options">
+                    <div class="download-card">
+                        <i class="fab fa-app-store-ios"></i>
+                        <h3 data-en="App Store" data-zh="App Store">App Store</h3>
+                        <p data-en="Coming Soon" data-zh="即将推出">Coming Soon</p>
+                        <button class="btn btn-disabled" disabled>
+                            <span data-en="Not Available Yet" data-zh="暂未上架">Not Available Yet</span>
+                        </button>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-code"></i>
+                        <h3 data-en="TestFlight Beta" data-zh="TestFlight 测试版">TestFlight Beta</h3>
+                        <p data-en="Join our beta testing program" data-zh="加入我们的测试计划">Join our beta testing program</p>
+                        <a href="#" class="btn btn-primary">
+                            <span data-en="Join Beta" data-zh="加入测试">Join Beta</span>
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <i class="fab fa-github"></i>
+                        <h3 data-en="Source Code" data-zh="源代码">Source Code</h3>
+                        <p data-en="Build from source" data-zh="从源码构建">Build from source</p>
+                        <a href="https://github.com/WeiProduct/MBTI" class="btn btn-secondary" target="_blank">
+                            <span data-en="View on GitHub" data-zh="在GitHub查看">View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="requirements">
+                    <h4 data-en="System Requirements" data-zh="系统要求">System Requirements</h4>
+                    <ul>
+                        <li data-en="iOS 16.0 or later" data-zh="iOS 16.0 或更高版本">iOS 16.0 or later</li>
+                        <li data-en="iPhone, iPad, or iPod touch" data-zh="iPhone、iPad 或 iPod touch">iPhone, iPad, or iPod touch</li>
+                        <li data-en="Approximately 50MB of storage" data-zh="约50MB存储空间">Approximately 50MB of storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About AIMBTI" data-zh="关于AIMBTI">About AIMBTI</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="AIMBTI is an innovative iOS application that combines the Myers-Briggs Type Indicator (MBTI) personality assessment with cutting-edge AI technology. Our mission is to help people better understand themselves and improve their personal and professional relationships." 
+                       data-zh="AIMBTI是一款创新的iOS应用，将迈尔斯-布里格斯性格类型指标（MBTI）人格评估与尖端AI技术相结合。我们的使命是帮助人们更好地了解自己，改善个人和职业关系。">
+                        AIMBTI is an innovative iOS application that combines the Myers-Briggs Type Indicator (MBTI) personality assessment with cutting-edge AI technology. Our mission is to help people better understand themselves and improve their personal and professional relationships.
+                    </p>
+                    <p data-en="With our AI-powered personal advisor, users receive tailored guidance based on their unique personality type, helping them navigate life's challenges and make better decisions aligned with their natural strengths and preferences."
+                       data-zh="通过我们的AI个人顾问，用户可以根据自己独特的人格类型获得量身定制的指导，帮助他们应对生活挑战，做出更符合自身优势和偏好的决策。">
+                        With our AI-powered personal advisor, users receive tailored guidance based on their unique personality type, helping them navigate life's challenges and make better decisions aligned with their natural strengths and preferences.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <h3 data-en="Why Choose AIMBTI?" data-zh="为什么选择AIMBTI？">Why Choose AIMBTI?</h3>
+                    <ul>
+                        <li data-en="Scientifically validated MBTI assessment" data-zh="经过科学验证的MBTI评估">Scientifically validated MBTI assessment</li>
+                        <li data-en="AI-powered personalized insights" data-zh="AI驱动的个性化洞察">AI-powered personalized insights</li>
+                        <li data-en="Beautiful and intuitive interface" data-zh="美观直观的界面">Beautiful and intuitive interface</li>
+                        <li data-en="Regular updates and improvements" data-zh="定期更新和改进">Regular updates and improvements</li>
+                        <li data-en="Active community support" data-zh="活跃的社区支持">Active community support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AIMBTI</h3>
+                    <p data-en="AI-Powered MBTI Personality Test" data-zh="AI驱动的MBTI人格测试">
+                        AI-Powered MBTI Personality Test
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-en="Quick Links" data-zh="快速链接">Quick Links</h4>
+                    <ul>
+                        <li><a href="#features" data-en="Features" data-zh="功能">Features</a></li>
+                        <li><a href="#screenshots" data-en="Screenshots" data-zh="截图">Screenshots</a></li>
+                        <li><a href="#download" data-en="Download" data-zh="下载">Download</a></li>
+                        <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-en="Resources" data-zh="资源">Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/WeiProduct/MBTI" target="_blank" data-en="GitHub" data-zh="GitHub">GitHub</a></li>
+                        <li><a href="#" data-en="Documentation" data-zh="文档">Documentation</a></li>
+                        <li><a href="#" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a></li>
+                        <li><a href="#" data-en="Terms of Service" data-zh="服务条款">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-en="Connect" data-zh="联系">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/WeiProduct/MBTI" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AIMBTI. <span data-en="All rights reserved." data-zh="保留所有权利。">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

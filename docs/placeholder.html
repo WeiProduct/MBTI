@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Placeholder Images</title>
+</head>
+<body>
+    <h1>AIMBTI Placeholder Images</h1>
+    <p>Right-click and save these images to use as placeholders:</p>
+    
+    <h2>App Preview (300x600)</h2>
+    <canvas id="app-preview" width="300" height="600"></canvas>
+    
+    <h2>Screenshots (250x500)</h2>
+    <canvas id="screenshot-1" width="250" height="500"></canvas>
+    <canvas id="screenshot-2" width="250" height="500"></canvas>
+    <canvas id="screenshot-3" width="250" height="500"></canvas>
+    <canvas id="screenshot-4" width="250" height="500"></canvas>
+    <canvas id="screenshot-5" width="250" height="500"></canvas>
+    
+    <script>
+        function createPlaceholder(canvasId, text, width, height) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Gradient background
+            const gradient = ctx.createLinearGradient(0, 0, width, height);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+            
+            // AIMBTI logo
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 40px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('AIMBTI', width/2, 100);
+            
+            // Screen name
+            ctx.font = '20px Arial';
+            ctx.fillText(text, width/2, height/2);
+            
+            // Mock UI elements
+            ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+            ctx.lineWidth = 2;
+            
+            // Mock buttons
+            for(let i = 0; i < 3; i++) {
+                ctx.beginPath();
+                ctx.roundRect(30, 200 + i*80, width-60, 50, 10);
+                ctx.stroke();
+            }
+        }
+        
+        // Create placeholders
+        createPlaceholder('app-preview', 'Welcome Screen', 300, 600);
+        createPlaceholder('screenshot-1', 'Welcome', 250, 500);
+        createPlaceholder('screenshot-2', 'Test Screen', 250, 500);
+        createPlaceholder('screenshot-3', 'Results', 250, 500);
+        createPlaceholder('screenshot-4', 'AI Advisor', 250, 500);
+        createPlaceholder('screenshot-5', 'Types', 250, 500);
+    </script>
+</body>
+</html>
