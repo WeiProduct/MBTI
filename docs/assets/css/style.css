@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -110,6 +110,10 @@ body {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: var(--text-primary);
+    font: inherit;
 }
 
 /* Hero Section */
@@ -262,14 +266,16 @@ body {
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 0 12px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
     color: white;
     margin-bottom: 1rem;
 }
@@ -321,7 +327,8 @@ body {
 
 .screenshot-item img {
     width: 100%;
-    height: 500px;
+    height: auto;
+    aspect-ratio: 1242 / 2688;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
@@ -361,6 +368,107 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow-md);
+}
+
+.download-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 64px;
+    height: 34px;
+    margin-bottom: 1rem;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: rgba(91, 103, 202, 0.1);
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.feature-card,
+.screenshot-item,
+.download-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature-card.animate-in,
+.screenshot-item.animate-in,
+.download-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-links.mobile-active {
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: var(--shadow-lg);
+    border-radius: 0 0 8px 8px;
+}
+
+.policy-content,
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    line-height: 1.8;
+}
+
+.policy-content h1,
+.terms-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.policy-content h2,
+.terms-content h2 {
+    color: var(--text-primary);
+    margin: 2rem 0 1rem;
+}
+
+.policy-content p,
+.policy-content li,
+.terms-content p,
+.terms-content li {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.policy-content ul,
+.terms-content ul {
+    padding-left: 2rem;
+}
+
+.lang-toggle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.lang-toggle button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.is-hidden {
+    display: none;
 }
 
 .download-card i {

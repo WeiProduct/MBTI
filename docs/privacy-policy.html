@@ -4,62 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - AIMBTI</title>
+    <meta name="description" content="AIMBTI privacy policy covering local test data, AI advisor requests, data storage, and user rights.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://weiproduct.github.io/MBTI/privacy-policy.html">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .policy-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 80px 20px;
-            line-height: 1.8;
-        }
-        .policy-content h1 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-        }
-        .policy-content h2 {
-            color: var(--text-primary);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .policy-content p, .policy-content li {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-        .policy-content ul {
-            padding-left: 2rem;
-        }
-        .lang-toggle {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .lang-toggle button {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 500;
-        }
-        .lang-toggle button:hover {
-            background: var(--secondary-color);
-        }
-        .last-updated {
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-    </style>
-</head>
+    </head>
 <body>
     <div class="policy-content">
         <div class="lang-toggle">
-            <button onclick="togglePolicyLanguage()">中文 / English</button>
+            <button id="policyLanguageToggle" type="button">中文 / English</button>
         </div>
         
         <div id="english-policy">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: January 25, 2025</p>
+            <p class="last-updated">Last updated: May 15, 2026</p>
             
             <h2>Introduction</h2>
             <p>Welcome to AIMBTI. We are committed to protecting your personal information and your right to privacy. This privacy policy describes how we handle your information when you use our iOS application.</p>
@@ -115,9 +73,9 @@
             <p>If you have any questions about this privacy policy, please contact us through the app's support section or via our GitHub repository.</p>
         </div>
         
-        <div id="chinese-policy" style="display: none;">
+        <div id="chinese-policy" class="is-hidden">
             <h1>隐私政策</h1>
-            <p class="last-updated">最后更新：2025年1月25日</p>
+            <p class="last-updated">最后更新：2026年5月15日</p>
             
             <h2>简介</h2>
             <p>欢迎使用AIMBTI。我们致力于保护您的个人信息和隐私权。本隐私政策描述了当您使用我们的iOS应用程序时，我们如何处理您的信息。</p>
@@ -175,6 +133,8 @@
     </div>
     
     <script>
+        document.getElementById('policyLanguageToggle').addEventListener('click', togglePolicyLanguage);
+
         function togglePolicyLanguage() {
             const englishPolicy = document.getElementById('english-policy');
             const chinesePolicy = document.getElementById('chinese-policy');

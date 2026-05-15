@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMBTI - AI-Powered MBTI Personality Test</title>
+    <meta name="description" content="AIMBTI is an AI-powered MBTI personality test for iOS with 93 questions, detailed type analysis, bilingual support, and a personal AI advisor.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5B67CA">
+    <link rel="canonical" href="https://weiproduct.github.io/MBTI/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WeiProduct">
+    <meta property="og:title" content="AIMBTI - AI-Powered MBTI Personality Test">
+    <meta property="og:description" content="A bilingual MBTI app with AI-guided insights, result history, and detailed personality analysis.">
+    <meta property="og:url" content="https://weiproduct.github.io/MBTI/">
+    <meta property="og:image" content="https://weiproduct.github.io/MBTI/assets/images/app-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AIMBTI">
+    <meta name="twitter:description" content="AI-powered MBTI testing and personalized personality guidance for iOS.">
+    <meta name="twitter:image" content="https://weiproduct.github.io/MBTI/assets/images/app-preview.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AIMBTI",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS",
+        "description": "An AI-powered MBTI personality test app with 93 questions, detailed type analysis, bilingual support, and a personal AI advisor.",
+        "url": "https://weiproduct.github.io/MBTI/",
+        "image": "https://weiproduct.github.io/MBTI/assets/images/app-preview.png",
+        "creator": {
+            "@type": "Organization",
+            "name": "WeiProduct",
+            "url": "https://weiproduct.com/"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -23,11 +55,11 @@
                 <a href="#screenshots">Screenshots</a>
                 <a href="#download">Download</a>
                 <a href="#about">About</a>
-                <button class="lang-switch" onclick="toggleLanguage()">中文</button>
+                <button class="lang-switch" type="button">中文</button>
             </div>
-            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu">
+                <span aria-hidden="true">Menu</span>
+            </button>
         </div>
     </nav>
 
@@ -43,7 +75,6 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">
-                        <i class="fab fa-apple"></i>
                         <span data-en="Download for iOS" data-zh="iOS下载">Download for iOS</span>
                     </a>
                     <a href="#features" class="btn btn-secondary">
@@ -67,7 +98,7 @@
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <img src="assets/images/app-preview.png" alt="AIMBTI App Preview">
+                    <img src="assets/images/app-preview.png" alt="AIMBTI App Preview" width="1242" height="2688">
                 </div>
             </div>
         </div>
@@ -80,7 +111,7 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
+                        <span aria-hidden="true">AI</span>
                     </div>
                     <h3 data-en="Comprehensive Test" data-zh="全面测试">Comprehensive Test</h3>
                     <p data-en="93 carefully crafted questions to accurately determine your MBTI personality type" data-zh="93道精心设计的问题，准确判定你的MBTI人格类型">
@@ -89,7 +120,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
+                        <span aria-hidden="true">Advisor</span>
                     </div>
                     <h3 data-en="AI Personal Advisor" data-zh="AI个人顾问">AI Personal Advisor</h3>
                     <p data-en="Get personalized guidance and insights from your AI advisor tailored to your personality type" data-zh="获得为你的人格类型量身定制的个性化指导和洞察">
@@ -98,7 +129,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <span aria-hidden="true">Analysis</span>
                     </div>
                     <h3 data-en="Detailed Analysis" data-zh="详细分析">Detailed Analysis</h3>
                     <p data-en="Understand your strengths, weaknesses, and compatibility with other types" data-zh="了解你的优势、劣势以及与其他类型的兼容性">
@@ -107,7 +138,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-history"></i>
+                        <span aria-hidden="true">History</span>
                     </div>
                     <h3 data-en="Progress Tracking" data-zh="进度跟踪">Progress Tracking</h3>
                     <p data-en="Save your results and track your personality development over time" data-zh="保存你的结果并跟踪你的人格发展">
@@ -116,7 +147,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-language"></i>
+                        <span aria-hidden="true">EN/ZH</span>
                     </div>
                     <h3 data-en="Bilingual Support" data-zh="双语支持">Bilingual Support</h3>
                     <p data-en="Available in both English and Chinese for a wider audience" data-zh="支持中英文双语，服务更广泛的用户">
@@ -125,7 +156,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <span aria-hidden="true">Privacy</span>
                     </div>
                     <h3 data-en="Privacy First" data-zh="隐私优先">Privacy First</h3>
                     <p data-en="Your data is stored locally and protected with industry-standard security" data-zh="你的数据本地存储，并采用行业标准安全保护">
@@ -142,23 +173,23 @@
             <h2 class="section-title" data-en="App Screenshots" data-zh="应用截图">App Screenshots</h2>
             <div class="screenshots-slider">
                 <div class="screenshot-item">
-                    <img src="assets/images/screenshot-1.png" alt="Test Home Screen">
+                    <img src="assets/images/screenshot-1.png" alt="Test Home Screen" width="1242" height="2688" loading="lazy">
                     <p data-en="Test Home" data-zh="测试主页">Test Home</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/images/screenshot-2.png" alt="Test Questions">
+                    <img src="assets/images/screenshot-2.png" alt="Test Questions" width="1242" height="2688" loading="lazy">
                     <p data-en="Personality Test" data-zh="人格测试">Personality Test</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/images/screenshot-3.png" alt="Test Results">
+                    <img src="assets/images/screenshot-3.png" alt="Test Results" width="1242" height="2688" loading="lazy">
                     <p data-en="Test Results" data-zh="测试结果">Test Results</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/images/screenshot-4.png" alt="AI Personal Advisor">
+                    <img src="assets/images/screenshot-4.png" alt="AI Personal Advisor" width="1242" height="2688" loading="lazy">
                     <p data-en="AI Personal Advisor" data-zh="AI个人顾问">AI Personal Advisor</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/images/screenshot-5.png" alt="Personality Types">
+                    <img src="assets/images/screenshot-5.png" alt="Personality Types" width="1242" height="2688" loading="lazy">
                     <p data-en="Personality Types" data-zh="人格类型">Personality Types</p>
                 </div>
             </div>
@@ -175,7 +206,7 @@
                 </p>
                 <div class="download-options">
                     <div class="download-card">
-                        <i class="fab fa-app-store-ios"></i>
+                        <span class="download-mark" aria-hidden="true">iOS</span>
                         <h3 data-en="App Store" data-zh="App Store">App Store</h3>
                         <p data-en="Coming Soon" data-zh="即将推出">Coming Soon</p>
                         <button class="btn btn-disabled" disabled>
@@ -183,18 +214,18 @@
                         </button>
                     </div>
                     <div class="download-card">
-                        <i class="fas fa-code"></i>
+                        <span class="download-mark" aria-hidden="true">Beta</span>
                         <h3 data-en="TestFlight Beta" data-zh="TestFlight 测试版">TestFlight Beta</h3>
                         <p data-en="Join our beta testing program" data-zh="加入我们的测试计划">Join our beta testing program</p>
-                        <a href="#" class="btn btn-primary">
-                            <span data-en="Join Beta" data-zh="加入测试">Join Beta</span>
+                        <a href="https://github.com/WeiProduct/MBTI/issues" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <span data-en="Request Access" data-zh="申请测试">Request Access</span>
                         </a>
                     </div>
                     <div class="download-card">
-                        <i class="fab fa-github"></i>
+                        <span class="download-mark" aria-hidden="true">GitHub</span>
                         <h3 data-en="Source Code" data-zh="源代码">Source Code</h3>
                         <p data-en="Build from source" data-zh="从源码构建">Build from source</p>
-                        <a href="https://github.com/WeiProduct/MBTI" class="btn btn-secondary" target="_blank">
+                        <a href="https://github.com/WeiProduct/MBTI" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                             <span data-en="View on GitHub" data-zh="在GitHub查看">View on GitHub</span>
                         </a>
                     </div>
@@ -262,8 +293,8 @@
                 <div class="footer-links">
                     <h4 data-en="Resources" data-zh="资源">Resources</h4>
                     <ul>
-                        <li><a href="https://github.com/WeiProduct/MBTI" target="_blank" data-en="GitHub" data-zh="GitHub">GitHub</a></li>
-                        <li><a href="https://github.com/WeiProduct/MBTI#readme" target="_blank" data-en="Documentation" data-zh="文档">Documentation</a></li>
+                        <li><a href="https://github.com/WeiProduct/MBTI" target="_blank" rel="noopener noreferrer" data-en="GitHub" data-zh="GitHub">GitHub</a></li>
+                        <li><a href="https://github.com/WeiProduct/MBTI#readme" target="_blank" rel="noopener noreferrer" data-en="Documentation" data-zh="文档">Documentation</a></li>
                         <li><a href="privacy-policy.html" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a></li>
                         <li><a href="terms-of-service.html" data-en="Terms of Service" data-zh="服务条款">Terms of Service</a></li>
                     </ul>
@@ -271,15 +302,13 @@
                 <div class="footer-social">
                     <h4 data-en="Connect" data-zh="联系">Connect</h4>
                     <div class="social-links">
-                        <a href="https://github.com/WeiProduct/MBTI" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/WeiProduct/MBTI" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="mailto:1597498880weiproduct@gmail.com">Email</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AIMBTI. <span data-en="All rights reserved." data-zh="保留所有权利。">All rights reserved.</span></p>
+                <p>&copy; 2026 WeiProduct. <span data-en="All rights reserved." data-zh="保留所有权利。">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
