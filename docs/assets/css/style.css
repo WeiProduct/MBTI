@@ -122,16 +122,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 /* Hero result-card widget (signature) */
 .hero-visual { position: relative; display: flex; justify-content: center; }
-.device { position: relative; width: 300px; max-width: 78vw; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 20px; box-shadow: var(--shadow-lg); }
+.device { position: relative; width: 300px; max-width: 78vw; aspect-ratio: 9 / 19.5; display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 20px; box-shadow: var(--shadow-lg); }
 .device-notch { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 90px; height: 22px; background: var(--text-primary); opacity: .9; border-radius: 999px; }
 :root[data-theme="dark"] .device-notch { background: #000; opacity: 1; }
-.result { margin-top: 34px; }
+.result { margin-top: 34px; flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .result-head { display: flex; align-items: center; gap: 12px; padding: 4px 6px 16px; }
 .result-badge { flex: 0 0 auto; width: 58px; height: 58px; border-radius: 16px; background: var(--grad); color: #fff; font-weight: 800; font-size: 17px; letter-spacing: .01em; display: grid; place-items: center; box-shadow: 0 8px 20px rgba(124,58,237,.4); }
 .result-name { display: flex; flex-direction: column; line-height: 1.25; }
 .result-name strong { font-size: 18px; font-weight: 800; }
 .result-name span { font-size: 12.5px; color: var(--role-diplomat); font-weight: 700; }
-.dims { display: flex; flex-direction: column; gap: 13px; padding: 2px 4px; }
+.dims { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-evenly; gap: 13px; padding: 2px 4px; }
 .dim-row { display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px; }
 .dim-row .on { color: var(--text-primary); }
 .bar { height: 8px; border-radius: 999px; background: var(--bg-secondary); border: 1px solid var(--border-color); overflow: hidden; }
