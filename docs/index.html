@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMBTI - AI-Powered MBTI Personality Test</title>
-    <meta name="description" content="AIMBTI is an AI-powered MBTI personality test for iOS with 93 questions, detailed type analysis, bilingual support, and a personal AI advisor.">
+    <meta name="theme-color" content="#5B67CA" id="themeColorMeta">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#5B67CA">
-    <link rel="canonical" href="https://weiproduct.github.io/MBTI/">
+    <title>AIMBTI - AI-Powered MBTI Personality Test | 16 Types</title>
+    <meta name="description" content="AIMBTI is an AI-powered MBTI personality test for iOS: 93 science-backed questions, all 16 personality types, strengths & compatibility analysis, a personal AI advisor, and full EN/中文 support. Private by design.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WeiProduct">
-    <meta property="og:title" content="AIMBTI - AI-Powered MBTI Personality Test">
-    <meta property="og:description" content="A bilingual MBTI app with AI-guided insights, result history, and detailed personality analysis.">
+    <meta property="og:title" content="AIMBTI | AI-Powered MBTI Personality Test">
+    <meta property="og:description" content="Take a 93-question MBTI test, discover your type among all 16, and chat with a personal AI advisor. Bilingual, private by design.">
     <meta property="og:url" content="https://weiproduct.github.io/MBTI/">
     <meta property="og:image" content="https://weiproduct.github.io/MBTI/assets/images/app-preview.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AIMBTI">
-    <meta name="twitter:description" content="AI-powered MBTI testing and personalized personality guidance for iOS.">
+    <meta name="twitter:title" content="AIMBTI | AI-Powered MBTI Personality Test">
+    <meta name="twitter:description" content="93-question MBTI test, all 16 types, and a personal AI advisor for iOS. Bilingual, private by design.">
     <meta name="twitter:image" content="https://weiproduct.github.io/MBTI/assets/images/app-preview.png">
+    <link rel="canonical" href="https://weiproduct.github.io/MBTI/">
+    <link rel="alternate" hreflang="en" href="https://weiproduct.github.io/MBTI/">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiproduct.github.io/MBTI/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235B67CA'/%3E%3Cstop offset='1' stop-color='%237C3AED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='45' r='21' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='M50 24v42M29 45h42' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='45' r='5.5' fill='white'/%3E%3Cpath d='M74 71l1.9 4.4 4.4 1.9-4.4 1.9L74 84l-1.9-4.4L67.7 77.2l4.4-1.9z' fill='white'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235B67CA'/%3E%3Cstop offset='1' stop-color='%237C3AED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='45' r='21' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='M50 24v42M29 45h42' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='45' r='5.5' fill='white'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="application/ld+json">
     {
@@ -25,294 +32,352 @@
         "@type": "SoftwareApplication",
         "name": "AIMBTI",
         "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS",
-        "description": "An AI-powered MBTI personality test app with 93 questions, detailed type analysis, bilingual support, and a personal AI advisor.",
+        "operatingSystem": "iOS 16.0+",
+        "description": "An AI-powered MBTI personality test with 93 science-backed questions, all 16 personality types, strengths and compatibility analysis, a personal AI advisor, and bilingual EN/中文 support.",
         "url": "https://weiproduct.github.io/MBTI/",
         "downloadUrl": "https://apps.apple.com/app/id6749165632",
         "image": "https://weiproduct.github.io/MBTI/assets/images/app-preview.png",
-        "creator": {
-            "@type": "Organization",
-            "name": "WeiProduct",
-            "url": "https://weiproduct.com/"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        }
+        "creator": { "@type": "Organization", "name": "WeiProduct", "url": "https://weiproduct.com/" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            { "@type": "Question", "name": "How does the test determine my personality type?", "acceptedAnswer": { "@type": "Answer", "text": "You answer 93 carefully crafted questions across the four MBTI dichotomies. Your responses are scored and mapped to one of the 16 personality types, with a breakdown of each preference." } },
+            { "@type": "Question", "name": "What is the AI personal advisor?", "acceptedAnswer": { "@type": "Answer", "text": "It is a conversational advisor that gives guidance and insights tailored to your specific personality type, helping you apply your strengths to everyday decisions." } },
+            { "@type": "Question", "name": "Is AIMBTI available in Chinese?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AIMBTI is fully bilingual in English and Simplified Chinese, and you can switch languages at any time inside the app." } },
+            { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Your results are stored locally on your device and protected with industry-standard security. We do not sell your personal data." } },
+            { "@type": "Question", "name": "How much does it cost and what are the requirements?", "acceptedAnswer": { "@type": "Answer", "text": "AIMBTI is free to download and requires iOS 16.0 or later on iPhone, iPad, or iPod touch." } }
+        ]
     }
     </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <h1>AIMBTI</h1>
-                <span class="tag">iOS App</span>
+            <a class="nav-brand" href="#" aria-label="AIMBTI">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B67CA"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg)"/><circle cx="50" cy="45" r="21" fill="none" stroke="#fff" stroke-width="5"/><path d="M50 24v42M29 45h42" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="45" r="5.5" fill="#fff"/><path d="M74 71l1.9 4.4 4.4 1.9-4.4 1.9L74 84l-1.9-4.4L67.7 77.2l4.4-1.9z" fill="#fff"/></svg>
+                </span>
+                <span class="brand-name">AIMBTI</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#how" class="nav-link" data-i18n="navHow">How it works</a>
+                <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
+                <a href="#types" class="nav-link" data-i18n="navTypes">16 Types</a>
+                <a href="#screenshots" class="nav-link" data-i18n="navScreenshots">Screenshots</a>
+                <a href="#faq" class="nav-link" data-i18n="navFaq">FAQ</a>
+                <button class="icon-btn" type="button" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">中文</button>
+                <a href="https://apps.apple.com/app/id6749165632" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer" data-i18n="navGet">Get App</a>
             </div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#screenshots">Screenshots</a>
-                <a href="https://apps.apple.com/app/id6749165632" target="_blank" rel="noopener noreferrer">Download</a>
-                <a href="#about">About</a>
-                <button class="lang-switch" type="button">中文</button>
-            </div>
-            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu">
-                <span aria-hidden="true">Menu</span>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <main id="main">
     <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title" data-en="Discover Your Personality Type" data-zh="发现你的人格类型">
-                    Discover Your Personality Type
-                </h1>
-                <p class="hero-subtitle" data-en="AI-powered MBTI personality test with personalized insights and guidance" data-zh="基于AI的MBTI人格测试，提供个性化洞察和指导">
-                    AI-powered MBTI personality test with personalized insights and guidance
-                </p>
+                <span class="eyebrow" data-i18n="heroEyebrow">✦ AI-powered personality insights</span>
+                <h1 class="hero-title" data-i18n="heroTitle">Discover Your Personality Type</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">A 93-question MBTI test that reveals your type among all 16 — with strengths, compatibility, and a personal AI advisor.</p>
                 <div class="hero-buttons">
                     <a href="https://apps.apple.com/app/id6749165632" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <span data-en="Download for iOS" data-zh="iOS下载">Download for iOS</span>
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span data-i18n="downloadBtn">Download on App Store</span>
                     </a>
-                    <a href="#features" class="btn btn-secondary">
-                        <span data-en="Learn More" data-zh="了解更多">Learn More</span>
-                    </a>
+                    <a href="#how" class="btn btn-secondary" data-i18n="learnMore">Learn more</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>93</h3>
-                        <p data-en="Questions" data-zh="道题目">Questions</p>
-                    </div>
-                    <div class="stat">
-                        <h3>16</h3>
-                        <p data-en="Personality Types" data-zh="种人格类型">Personality Types</p>
-                    </div>
-                    <div class="stat">
-                        <h3>AI</h3>
-                        <p data-en="Personal Advisor" data-zh="个人顾问">Personal Advisor</p>
-                    </div>
-                </div>
+                <ul class="hero-trust">
+                    <li data-i18n="trust1">🔒 Private by design</li>
+                    <li data-i18n="trust2">🧠 All 16 types</li>
+                    <li data-i18n="trust3">🌏 EN / 中文</li>
+                </ul>
             </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <img src="assets/images/app-preview.png" alt="AIMBTI App Preview" width="1242" height="2688">
+            <div class="hero-visual">
+                <div class="device" role="img" aria-label="An MBTI result card showing the INFJ type with preference breakdown and an AI advisor tip">
+                    <div class="device-notch" aria-hidden="true"></div>
+                    <div class="result">
+                        <div class="result-head">
+                            <span class="result-badge">INFJ</span>
+                            <span class="result-name">
+                                <strong data-i18n="typeName">The Advocate</strong>
+                                <span data-i18n="typeRole">Diplomat</span>
+                            </span>
+                        </div>
+                        <div class="dims">
+                            <div class="dim">
+                                <div class="dim-row"><span class="on" data-i18n="dimI">Introverted</span><span data-i18n="dimE">Extraverted</span></div>
+                                <div class="bar"><div class="fill" style="--v:72%"></div></div>
+                            </div>
+                            <div class="dim">
+                                <div class="dim-row"><span class="on" data-i18n="dimN">Intuitive</span><span data-i18n="dimS">Observant</span></div>
+                                <div class="bar"><div class="fill" style="--v:64%"></div></div>
+                            </div>
+                            <div class="dim">
+                                <div class="dim-row"><span class="on" data-i18n="dimF">Feeling</span><span data-i18n="dimT">Thinking</span></div>
+                                <div class="bar"><div class="fill" style="--v:78%"></div></div>
+                            </div>
+                            <div class="dim">
+                                <div class="dim-row"><span class="on" data-i18n="dimJ">Judging</span><span data-i18n="dimP">Prospecting</span></div>
+                                <div class="bar"><div class="fill" style="--v:58%"></div></div>
+                            </div>
+                        </div>
+                        <div class="advisor">
+                            <span class="advisor-av" aria-hidden="true">AI</span>
+                            <span class="advisor-bubble" data-i18n="advisorMsg">As an INFJ, channel your empathy into one focused goal this week.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-chip chip-a" data-i18n="chipA">✦ 16 types</div>
+                <div class="hero-chip chip-b" data-i18n="chipB">93 questions</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proof" aria-label="highlights">
+        <div class="container proof-row">
+            <div class="proof-rating">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <div class="proof-sub"><strong>App Store</strong><span data-i18n="proofRating">Lifestyle · Personality</span></div>
+            </div>
+            <div class="proof-stats">
+                <div class="stat"><strong>93</strong><span data-i18n="stat1">Questions</span></div>
+                <div class="stat"><strong>16</strong><span data-i18n="stat2">Personality types</span></div>
+                <div class="stat"><strong>AI</strong><span data-i18n="stat3">Personal advisor</span></div>
+                <div class="stat"><strong>EN / 中文</strong><span data-i18n="stat4">Bilingual</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howTitle">Know yourself in three steps</h2>
+            <p class="section-sub" data-i18n="howSub">From questions to guidance — powered by AI.</p>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-badge">1</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 3.5h6v3H9zM9 12h6M9 16h4"/></svg></div>
+                    <h3 data-i18n="step1Title">Answer 93 questions</h3>
+                    <p data-i18n="step1Desc">Work through 93 science-backed questions across the four MBTI dichotomies at your own pace.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">2</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.4 4.9.6-3.6 3.3 1 4.8L12 15.9 7.6 16.4l1-4.8L5 11.3l4.9-.6z"/></svg></div>
+                    <h3 data-i18n="step2Title">Get your type & analysis</h3>
+                    <p data-i18n="step2Desc">See your type among all 16, with strengths, weaknesses, and compatibility with other types.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">3</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-11.9 7.6L4 20.5l1.4-5A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></div>
+                    <h3 data-i18n="step3Title">Chat with your AI advisor</h3>
+                    <p data-i18n="step3Desc">Ask your personal AI advisor for guidance tailored to your unique personality type.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title" data-en="Powerful Features" data-zh="强大功能">Powerful Features</h2>
+            <h2 class="section-title" data-i18n="featuresTitle">Powerful Features</h2>
+            <p class="section-sub" data-i18n="featuresSub">Everything you need to understand yourself better.</p>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">AI</span>
-                    </div>
-                    <h3 data-en="Comprehensive Test" data-zh="全面测试">Comprehensive Test</h3>
-                    <p data-en="93 carefully crafted questions to accurately determine your MBTI personality type" data-zh="93道精心设计的问题，准确判定你的MBTI人格类型">
-                        93 carefully crafted questions to accurately determine your MBTI personality type
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8.5 3.5h7v3h-7z"/><path d="M8 11.5l1.5 1.5L12 10M8 16.5l1.5 1.5L12 15"/><path d="M14.5 12H17M14.5 16.5H17"/></svg></div>
+                    <h3 data-i18n="feature1Title">Comprehensive Test</h3>
+                    <p data-i18n="feature1Desc">93 carefully crafted questions accurately determine your MBTI personality type.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">Advisor</span>
-                    </div>
-                    <h3 data-en="AI Personal Advisor" data-zh="AI个人顾问">AI Personal Advisor</h3>
-                    <p data-en="Get personalized guidance and insights from your AI advisor tailored to your personality type" data-zh="获得为你的人格类型量身定制的个性化指导和洞察">
-                        Get personalized guidance and insights from your AI advisor tailored to your personality type
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-11.9 7.6L4 20.5l1.4-5A8.4 8.4 0 1 1 21 11.5z"/><path d="M12 6.5v1M12 8.7c1.3 0 2 .8 2 1.7 0 1.5-2 1.3-2 3M12 15h.01"/></svg></div>
+                    <h3 data-i18n="feature2Title">AI Personal Advisor</h3>
+                    <p data-i18n="feature2Desc">Get personalized guidance and insights from an AI advisor tuned to your type.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">Analysis</span>
-                    </div>
-                    <h3 data-en="Detailed Analysis" data-zh="详细分析">Detailed Analysis</h3>
-                    <p data-en="Understand your strengths, weaknesses, and compatibility with other types" data-zh="了解你的优势、劣势以及与其他类型的兼容性">
-                        Understand your strengths, weaknesses, and compatibility with other types
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M7 16l3.5-4 3 2.5L20 7"/><path d="M16.5 7H20v3.5"/></svg></div>
+                    <h3 data-i18n="feature3Title">Detailed Analysis</h3>
+                    <p data-i18n="feature3Desc">Understand your strengths, weaknesses, and compatibility with other types.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">History</span>
-                    </div>
-                    <h3 data-en="Progress Tracking" data-zh="进度跟踪">Progress Tracking</h3>
-                    <p data-en="Save your results and track your personality development over time" data-zh="保存你的结果并跟踪你的人格发展">
-                        Save your results and track your personality development over time
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 1 2.6 6.1"/><path d="M3.5 12H6M3.5 12V9.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+                    <h3 data-i18n="feature4Title">Progress Tracking</h3>
+                    <p data-i18n="feature4Desc">Save your results and track how your personality profile evolves over time.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">EN/ZH</span>
-                    </div>
-                    <h3 data-en="Bilingual Support" data-zh="双语支持">Bilingual Support</h3>
-                    <p data-en="Available in both English and Chinese for a wider audience" data-zh="支持中英文双语，服务更广泛的用户">
-                        Available in both English and Chinese for a wider audience
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z"/></svg></div>
+                    <h3 data-i18n="feature5Title">Bilingual Support</h3>
+                    <p data-i18n="feature5Desc">Available in both English and Simplified Chinese for a wider audience.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span aria-hidden="true">Privacy</span>
-                    </div>
-                    <h3 data-en="Privacy First" data-zh="隐私优先">Privacy First</h3>
-                    <p data-en="Your data is stored locally and protected with industry-standard security" data-zh="你的数据本地存储，并采用行业标准安全保护">
-                        Your data is stored locally and protected with industry-standard security
-                    </p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3 data-i18n="feature6Title">Privacy First</h3>
+                    <p data-i18n="feature6Desc">Your data is stored locally and protected with industry-standard security.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
+    <section id="types" class="types">
+        <div class="container">
+            <h2 class="section-title" data-i18n="typesTitle">All 16 Personality Types</h2>
+            <p class="section-sub" data-i18n="typesSub">Grouped into the four canonical roles. Which one are you?</p>
+            <div class="types-grid">
+                <div class="type-group analyst reveal">
+                    <div class="type-group-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6l-4.5 8A2 2 0 0 0 6.3 20h11.4a2 2 0 0 0 1.8-3L15 9V3"/><path d="M8 3h8M8.5 14h7"/></svg><span data-i18n="grpAnalysts">Analysts</span></div>
+                    <div class="type-group-sub" data-i18n="grpAnalystsSub">Intuitive · Thinking</div>
+                    <div class="type-list">
+                        <div class="type-card"><span class="type-code">INTJ</span><span class="type-nick" data-i18n="tINTJ">Architect</span></div>
+                        <div class="type-card"><span class="type-code">INTP</span><span class="type-nick" data-i18n="tINTP">Logician</span></div>
+                        <div class="type-card"><span class="type-code">ENTJ</span><span class="type-nick" data-i18n="tENTJ">Commander</span></div>
+                        <div class="type-card"><span class="type-code">ENTP</span><span class="type-nick" data-i18n="tENTP">Debater</span></div>
+                    </div>
+                </div>
+                <div class="type-group diplomat reveal">
+                    <div class="type-group-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.2-8.6C1.3 8.7 2.6 5.5 5.6 5.1 7.6 4.8 9.2 6 12 8.7c2.8-2.7 4.4-3.9 6.4-3.6 3 .4 4.3 3.6 2.8 6.3C19 15.6 12 20 12 20z"/></svg><span data-i18n="grpDiplomats">Diplomats</span></div>
+                    <div class="type-group-sub" data-i18n="grpDiplomatsSub">Intuitive · Feeling</div>
+                    <div class="type-list">
+                        <div class="type-card"><span class="type-code">INFJ</span><span class="type-nick" data-i18n="tINFJ">Advocate</span></div>
+                        <div class="type-card"><span class="type-code">INFP</span><span class="type-nick" data-i18n="tINFP">Mediator</span></div>
+                        <div class="type-card"><span class="type-code">ENFJ</span><span class="type-nick" data-i18n="tENFJ">Protagonist</span></div>
+                        <div class="type-card"><span class="type-code">ENFP</span><span class="type-nick" data-i18n="tENFP">Campaigner</span></div>
+                    </div>
+                </div>
+                <div class="type-group sentinel reveal">
+                    <div class="type-group-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/></svg><span data-i18n="grpSentinels">Sentinels</span></div>
+                    <div class="type-group-sub" data-i18n="grpSentinelsSub">Observant · Judging</div>
+                    <div class="type-list">
+                        <div class="type-card"><span class="type-code">ISTJ</span><span class="type-nick" data-i18n="tISTJ">Logistician</span></div>
+                        <div class="type-card"><span class="type-code">ISFJ</span><span class="type-nick" data-i18n="tISFJ">Defender</span></div>
+                        <div class="type-card"><span class="type-code">ESTJ</span><span class="type-nick" data-i18n="tESTJ">Executive</span></div>
+                        <div class="type-card"><span class="type-code">ESFJ</span><span class="type-nick" data-i18n="tESFJ">Consul</span></div>
+                    </div>
+                </div>
+                <div class="type-group explorer reveal">
+                    <div class="type-group-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg><span data-i18n="grpExplorers">Explorers</span></div>
+                    <div class="type-group-sub" data-i18n="grpExplorersSub">Observant · Prospecting</div>
+                    <div class="type-list">
+                        <div class="type-card"><span class="type-code">ISTP</span><span class="type-nick" data-i18n="tISTP">Virtuoso</span></div>
+                        <div class="type-card"><span class="type-code">ISFP</span><span class="type-nick" data-i18n="tISFP">Adventurer</span></div>
+                        <div class="type-card"><span class="type-code">ESTP</span><span class="type-nick" data-i18n="tESTP">Entrepreneur</span></div>
+                        <div class="type-card"><span class="type-code">ESFP</span><span class="type-nick" data-i18n="tESFP">Entertainer</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="screenshots" class="screenshots">
         <div class="container">
-            <h2 class="section-title" data-en="App Screenshots" data-zh="应用截图">App Screenshots</h2>
-            <div class="screenshots-slider">
-                <div class="screenshot-item">
-                    <img src="assets/images/screenshot-1.png" alt="Test Home Screen" width="1242" height="2688" loading="lazy">
-                    <p data-en="Test Home" data-zh="测试主页">Test Home</p>
+            <h2 class="section-title" data-i18n="screenshotsTitle">App Screenshots</h2>
+            <p class="section-sub" data-i18n="screenshotsSub">Swipe through — tap any shot to zoom in.</p>
+            <div class="gallery">
+                <button class="gal-arrow prev" type="button" aria-label="Previous" id="galPrev">‹</button>
+                <div class="gal-track" id="galTrack">
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/images/screenshot-1.png" alt="Test home screen" width="1242" height="2688" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot1">Start the test</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/images/screenshot-2.png" alt="About the MBTI test screen" width="1242" height="2688" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot2">How the test works</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/images/screenshot-3.png" alt="Personality test results" width="1242" height="2688" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot3">See your results</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/images/screenshot-4.png" alt="Browse all 16 personality types" width="1242" height="2688" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot4">Browse all 16 types</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/images/screenshot-5.png" alt="Test history and statistics" width="1242" height="2688" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot5">Track your test history</figcaption>
+                    </figure>
                 </div>
-                <div class="screenshot-item">
-                    <img src="assets/images/screenshot-2.png" alt="Test Questions" width="1242" height="2688" loading="lazy">
-                    <p data-en="Personality Test" data-zh="人格测试">Personality Test</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/images/screenshot-3.png" alt="Test Results" width="1242" height="2688" loading="lazy">
-                    <p data-en="Test Results" data-zh="测试结果">Test Results</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/images/screenshot-4.png" alt="AI Personal Advisor" width="1242" height="2688" loading="lazy">
-                    <p data-en="AI Personal Advisor" data-zh="AI个人顾问">AI Personal Advisor</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/images/screenshot-5.png" alt="Personality Types" width="1242" height="2688" loading="lazy">
-                    <p data-en="Personality Types" data-zh="人格类型">Personality Types</p>
-                </div>
+                <button class="gal-arrow next" type="button" aria-label="Next" id="galNext">›</button>
+            </div>
+            <div class="gal-dots" id="galDots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container privacy-card">
+            <div class="privacy-lead">
+                <h2 data-i18n="privacyTitle">Your results stay with you</h2>
+                <p data-i18n="privacyDesc">No account required. Your test results are stored locally on your device and protected with industry-standard security.</p>
+            </div>
+            <ul class="privacy-points">
+                <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg><span data-i18n="pp1">Stored on-device</span></li>
+                <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="pp2">No account needed</span></li>
+                <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg><span data-i18n="pp3">Zero tracking</span></li>
+                <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg><span data-i18n="pp4">No ads</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="q1">How does the test determine my personality type?</summary><p data-i18n="a1">You answer 93 carefully crafted questions across the four MBTI dichotomies. Your responses are scored and mapped to one of the 16 personality types, with a breakdown of each preference.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q2">What is the AI personal advisor?</summary><p data-i18n="a2">It is a conversational advisor that gives guidance and insights tailored to your specific personality type, helping you apply your strengths to everyday decisions.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q3">Is AIMBTI available in Chinese?</summary><p data-i18n="a3">Yes. AIMBTI is fully bilingual in English and Simplified Chinese, and you can switch languages at any time inside the app.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q4">Is my data private?</summary><p data-i18n="a4">Your results are stored locally on your device and protected with industry-standard security. We do not sell your personal data.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q5">How much does it cost and what are the requirements?</summary><p data-i18n="a5">AIMBTI is free to download and requires iOS 16.0 or later on iPhone, iPad, or iPod touch.</p></details>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
             <div class="download-content">
-                <h2 class="section-title" data-en="Download AIMBTI" data-zh="下载AIMBTI">Download AIMBTI</h2>
-                <p class="download-subtitle" data-en="Available for iOS devices" data-zh="适用于iOS设备">
-                    Available for iOS devices
-                </p>
-                <div class="download-options">
-                    <div class="download-card">
-                        <span class="download-mark" aria-hidden="true">iOS</span>
-                        <h3 data-en="App Store" data-zh="App Store">App Store</h3>
-                        <p data-en="Available now" data-zh="现已上架">Available now</p>
-                        <a href="https://apps.apple.com/app/id6749165632" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <span data-en="Download on the App Store" data-zh="前往 App Store">Download on the App Store</span>
-                        </a>
-                    </div>
-                    <div class="download-card">
-                        <span class="download-mark" aria-hidden="true">Beta</span>
-                        <h3 data-en="TestFlight Beta" data-zh="TestFlight 测试版">TestFlight Beta</h3>
-                        <p data-en="Join our beta testing program" data-zh="加入我们的测试计划">Join our beta testing program</p>
-                        <a href="https://github.com/WeiProduct/MBTI/issues" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <span data-en="Request Access" data-zh="申请测试">Request Access</span>
-                        </a>
-                    </div>
-                    <div class="download-card">
-                        <span class="download-mark" aria-hidden="true">GitHub</span>
-                        <h3 data-en="Source Code" data-zh="源代码">Source Code</h3>
-                        <p data-en="Build from source" data-zh="从源码构建">Build from source</p>
-                        <a href="https://github.com/WeiProduct/MBTI" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                            <span data-en="View on GitHub" data-zh="在GitHub查看">View on GitHub</span>
-                        </a>
+                <h2 data-i18n="downloadTitle">Download AIMBTI</h2>
+                <p data-i18n="downloadSubtitle">Start discovering your personality type today.</p>
+                <div class="download-cta">
+                    <a href="https://apps.apple.com/app/id6749165632" class="app-store-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <svg viewBox="0 0 120 40" role="img" aria-label="Download on the App Store">
+                            <rect x="0.5" y="0.5" width="119" height="39" rx="7.5" fill="#000" stroke="#A6A6A6"/>
+                            <g transform="translate(13.5,9.2) scale(0.052)" fill="#fff"><path d="M258.4 219.6c-.5-46.2 37.7-68.3 39.4-69.4-21.5-31.4-55-35.7-66.9-36.2-28.5-2.9-55.6 16.8-70 16.8-14.4 0-36.7-16.4-60.3-16-31 .5-59.6 18-75.5 45.7-32.2 55.9-8.2 138.8 23.1 184.3 15.3 22.3 33.5 47.3 57.4 46.4 23-1 31.7-14.9 59.5-14.9 27.8 0 35.6 14.9 60 14.4 24.8-.4 40.5-22.7 55.7-45.1 17.6-25.9 24.8-51 25.2-52.3-.5-.2-48.4-18.6-48.9-73.6zM212.3 84.1C224.9 68.8 233.4 47.6 231.1 26.3 213 27 191.1 38.7 178.1 54 166.4 67.5 156.2 89.1 158.9 109.9c20.2 1.6 40.7-10.3 53.4-25.8z"/></g>
+                            <text x="42" y="16" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="7.5" font-weight="400" data-i18n="badgeTop">Download on the</text>
+                            <text x="42" y="31" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="600" letter-spacing="-0.5">App Store</text>
+                        </svg>
+                    </a>
+                    <div class="qr-wrap">
+                        <svg class="qr" viewBox="0 0 33 33" role="img" aria-label="Scan to open AIMBTI on the App Store"><path fill="#fff" d="M0 0h33v33h-33z"/><path stroke="#1f2937" d="M2 2.5h7m2 0h1m2 0h1m2 0h6m1 0h7m-29 1h1m5 0h1m3 0h1m2 0h3m2 0h1m1 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h3m5 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h1m4 0h2m1 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1m2 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h2m2 0h1m1 0h2m3 0h1m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h1m3 0h1m2 0h4m-21 1h1m2 0h1m1 0h2m1 0h2m2 0h2m5 0h1m1 0h1m1 0h1m-24 1h3m2 0h1m2 0h2m1 0h4m2 0h2m1 0h4m1 0h1m2 0h1m-28 1h1m1 0h4m1 0h3m3 0h1m1 0h1m1 0h2m1 0h3m1 0h3m-28 1h3m2 0h1m1 0h1m1 0h7m4 0h3m3 0h2m-28 1h1m2 0h2m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h4m1 0h1m1 0h2m-29 1h1m1 0h1m1 0h2m1 0h1m8 0h6m-21 1h1m1 0h2m1 0h1m3 0h1m1 0h1m4 0h2m3 0h7m-29 1h1m1 0h1m1 0h1m3 0h3m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1m-26 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m1 0h2m1 0h1m3 0h1m-27 1h1m1 0h1m4 0h1m3 0h1m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m2 0h1m-29 1h1m1 0h1m2 0h5m1 0h3m2 0h2m4 0h1m1 0h1m2 0h2m-27 1h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h4m3 0h2m-29 1h1m2 0h1m2 0h6m2 0h1m5 0h5m1 0h1m-19 1h1m1 0h4m5 0h2m3 0h1m1 0h3m-29 1h7m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m5 0h1m1 0h2m1 0h3m2 0h1m1 0h1m1 0h1m3 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h3m2 0h1m2 0h1m2 0h5m2 0h2m-29 1h1m1 0h3m1 0h1m1 0h3m1 0h3m1 0h2m4 0h1m1 0h4m-28 1h1m1 0h3m1 0h1m4 0h1m1 0h1m2 0h2m1 0h3m2 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m1 0h1m1 0h2m1 0h2m1 0h3m5 0h1m-28 1h7m1 0h2m1 0h1m1 0h1m2 0h3m1 0h1m3 0h2m1 0h1"/></svg>
+                        <span data-i18n="qrText">Scan to open on the App Store</span>
                     </div>
                 </div>
-                <div class="requirements">
-                    <h4 data-en="System Requirements" data-zh="系统要求">System Requirements</h4>
-                    <ul>
-                        <li data-en="iOS 16.0 or later" data-zh="iOS 16.0 或更高版本">iOS 16.0 or later</li>
-                        <li data-en="iPhone, iPad, or iPod touch" data-zh="iPhone、iPad 或 iPod touch">iPhone, iPad, or iPod touch</li>
-                        <li data-en="Approximately 50MB of storage" data-zh="约50MB存储空间">Approximately 50MB of storage</li>
-                    </ul>
-                </div>
+                <p class="download-note" data-i18n="downloadNote">Free · Requires iOS 16.0 or later</p>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-en="About AIMBTI" data-zh="关于AIMBTI">About AIMBTI</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-en="AIMBTI is an innovative iOS application that combines the Myers-Briggs Type Indicator (MBTI) personality assessment with cutting-edge AI technology. Our mission is to help people better understand themselves and improve their personal and professional relationships." 
-                       data-zh="AIMBTI是一款创新的iOS应用，将迈尔斯-布里格斯性格类型指标（MBTI）人格评估与尖端AI技术相结合。我们的使命是帮助人们更好地了解自己，改善个人和职业关系。">
-                        AIMBTI is an innovative iOS application that combines the Myers-Briggs Type Indicator (MBTI) personality assessment with cutting-edge AI technology. Our mission is to help people better understand themselves and improve their personal and professional relationships.
-                    </p>
-                    <p data-en="With our AI-powered personal advisor, users receive tailored guidance based on their unique personality type, helping them navigate life's challenges and make better decisions aligned with their natural strengths and preferences."
-                       data-zh="通过我们的AI个人顾问，用户可以根据自己独特的人格类型获得量身定制的指导，帮助他们应对生活挑战，做出更符合自身优势和偏好的决策。">
-                        With our AI-powered personal advisor, users receive tailored guidance based on their unique personality type, helping them navigate life's challenges and make better decisions aligned with their natural strengths and preferences.
-                    </p>
-                </div>
-                <div class="about-features">
-                    <h3 data-en="Why Choose AIMBTI?" data-zh="为什么选择AIMBTI？">Why Choose AIMBTI?</h3>
-                    <ul>
-                        <li data-en="Scientifically validated MBTI assessment" data-zh="经过科学验证的MBTI评估">Scientifically validated MBTI assessment</li>
-                        <li data-en="AI-powered personalized insights" data-zh="AI驱动的个性化洞察">AI-powered personalized insights</li>
-                        <li data-en="Beautiful and intuitive interface" data-zh="美观直观的界面">Beautiful and intuitive interface</li>
-                        <li data-en="Regular updates and improvements" data-zh="定期更新和改进">Regular updates and improvements</li>
-                        <li data-en="Active community support" data-zh="活跃的社区支持">Active community support</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>AIMBTI</h3>
-                    <p data-en="AI-Powered MBTI Personality Test" data-zh="AI驱动的MBTI人格测试">
-                        AI-Powered MBTI Personality Test
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <h4 data-en="Quick Links" data-zh="快速链接">Quick Links</h4>
-                    <ul>
-                        <li><a href="#features" data-en="Features" data-zh="功能">Features</a></li>
-                        <li><a href="#screenshots" data-en="Screenshots" data-zh="截图">Screenshots</a></li>
-                        <li><a href="https://apps.apple.com/app/id6749165632" target="_blank" rel="noopener noreferrer" data-en="Download" data-zh="下载">Download</a></li>
-                        <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4 data-en="Resources" data-zh="资源">Resources</h4>
-                    <ul>
-                        <li><a href="https://github.com/WeiProduct/MBTI" target="_blank" rel="noopener noreferrer" data-en="GitHub" data-zh="GitHub">GitHub</a></li>
-                        <li><a href="https://github.com/WeiProduct/MBTI#readme" target="_blank" rel="noopener noreferrer" data-en="Documentation" data-zh="文档">Documentation</a></li>
-                        <li><a href="privacy-policy.html" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" data-en="Terms of Service" data-zh="服务条款">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4 data-en="Connect" data-zh="联系">Connect</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/WeiProduct/MBTI" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="mailto:1597498880weiproduct@gmail.com">Email</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 WeiProduct. <span data-en="All rights reserved." data-zh="保留所有权利。">All rights reserved.</span></p>
+                <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">AIMBTI. All rights reserved.</span></p>
+                <p data-i18n="footerMadeBy">Built by WeiProduct</p>
+                <p>Contact: <a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a> · <a href="privacy-policy.html" data-i18n="footerPrivacy">Privacy</a> · <a href="terms-of-service.html" data-i18n="footerTerms">Terms</a></p>
             </div>
         </div>
     </footer>
+
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-app">
+            <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B67CA"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg2)"/><circle cx="50" cy="45" r="21" fill="none" stroke="#fff" stroke-width="5"/><path d="M50 24v42M29 45h42" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="45" r="5.5" fill="#fff"/></svg></span>
+            <div class="sticky-txt"><strong>AIMBTI</strong><span data-i18n="stickySub">Free personality test</span></div>
+        </div>
+        <a href="https://apps.apple.com/app/id6749165632" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="stickyGet">Get</a>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -1,134 +1,249 @@
-let currentLanguage = 'en';
+// ===== i18n =====
+const I18N = {
+  'en': {
+    skip: 'Skip to content',
+    navHow: 'How it works', navFeatures: 'Features', navTypes: '16 Types', navScreenshots: 'Screenshots', navFaq: 'FAQ', navGet: 'Get App',
+    heroEyebrow: '✦ AI-powered personality insights',
+    heroTitle: 'Discover Your Personality Type',
+    heroSubtitle: 'A 93-question MBTI test that reveals your type among all 16 — with strengths, compatibility, and a personal AI advisor.',
+    downloadBtn: 'Download on App Store', learnMore: 'Learn more',
+    trust1: '🔒 Private by design', trust2: '🧠 All 16 types', trust3: '🌏 EN / 中文',
+    typeName: 'The Advocate', typeRole: 'Diplomat',
+    dimI: 'Introverted', dimE: 'Extraverted', dimN: 'Intuitive', dimS: 'Observant',
+    dimF: 'Feeling', dimT: 'Thinking', dimJ: 'Judging', dimP: 'Prospecting',
+    advisorMsg: 'As an INFJ, channel your empathy into one focused goal this week.',
+    chipA: '✦ 16 types', chipB: '93 questions',
+    proofRating: 'Lifestyle · Personality',
+    stat1: 'Questions', stat2: 'Personality types', stat3: 'Personal advisor', stat4: 'Bilingual',
+    howTitle: 'Know yourself in three steps', howSub: 'From questions to guidance — powered by AI.',
+    step1Title: 'Answer 93 questions', step1Desc: 'Work through 93 science-backed questions across the four MBTI dichotomies at your own pace.',
+    step2Title: 'Get your type & analysis', step2Desc: 'See your type among all 16, with strengths, weaknesses, and compatibility with other types.',
+    step3Title: 'Chat with your AI advisor', step3Desc: 'Ask your personal AI advisor for guidance tailored to your unique personality type.',
+    featuresTitle: 'Powerful Features', featuresSub: 'Everything you need to understand yourself better.',
+    feature1Title: 'Comprehensive Test', feature1Desc: '93 carefully crafted questions accurately determine your MBTI personality type.',
+    feature2Title: 'AI Personal Advisor', feature2Desc: 'Get personalized guidance and insights from an AI advisor tuned to your type.',
+    feature3Title: 'Detailed Analysis', feature3Desc: 'Understand your strengths, weaknesses, and compatibility with other types.',
+    feature4Title: 'Progress Tracking', feature4Desc: 'Save your results and track how your personality profile evolves over time.',
+    feature5Title: 'Bilingual Support', feature5Desc: 'Available in both English and Simplified Chinese for a wider audience.',
+    feature6Title: 'Privacy First', feature6Desc: 'Your data is stored locally and protected with industry-standard security.',
+    typesTitle: 'All 16 Personality Types', typesSub: 'Grouped into the four canonical roles. Which one are you?',
+    grpAnalysts: 'Analysts', grpAnalystsSub: 'Intuitive · Thinking',
+    grpDiplomats: 'Diplomats', grpDiplomatsSub: 'Intuitive · Feeling',
+    grpSentinels: 'Sentinels', grpSentinelsSub: 'Observant · Judging',
+    grpExplorers: 'Explorers', grpExplorersSub: 'Observant · Prospecting',
+    tINTJ: 'Architect', tINTP: 'Logician', tENTJ: 'Commander', tENTP: 'Debater',
+    tINFJ: 'Advocate', tINFP: 'Mediator', tENFJ: 'Protagonist', tENFP: 'Campaigner',
+    tISTJ: 'Logistician', tISFJ: 'Defender', tESTJ: 'Executive', tESFJ: 'Consul',
+    tISTP: 'Virtuoso', tISFP: 'Adventurer', tESTP: 'Entrepreneur', tESFP: 'Entertainer',
+    screenshotsTitle: 'App Screenshots', screenshotsSub: 'Swipe through — tap any shot to zoom in.',
+    shot1: 'Start the test', shot2: 'How the test works', shot3: 'See your results', shot4: 'Browse all 16 types', shot5: 'Track your test history',
+    privacyTitle: 'Your results stay with you', privacyDesc: 'No account required. Your test results are stored locally on your device and protected with industry-standard security.',
+    pp1: 'Stored on-device', pp2: 'No account needed', pp3: 'Zero tracking', pp4: 'No ads',
+    faqTitle: 'Frequently Asked Questions',
+    q1: 'How does the test determine my personality type?', a1: 'You answer 93 carefully crafted questions across the four MBTI dichotomies. Your responses are scored and mapped to one of the 16 personality types, with a breakdown of each preference.',
+    q2: 'What is the AI personal advisor?', a2: 'It is a conversational advisor that gives guidance and insights tailored to your specific personality type, helping you apply your strengths to everyday decisions.',
+    q3: 'Is AIMBTI available in Chinese?', a3: 'Yes. AIMBTI is fully bilingual in English and Simplified Chinese, and you can switch languages at any time inside the app.',
+    q4: 'Is my data private?', a4: 'Your results are stored locally on your device and protected with industry-standard security. We do not sell your personal data.',
+    q5: 'How much does it cost and what are the requirements?', a5: 'AIMBTI is free to download and requires iOS 16.0 or later on iPhone, iPad, or iPod touch.',
+    downloadTitle: 'Download AIMBTI', downloadSubtitle: 'Start discovering your personality type today.',
+    badgeTop: 'Download on the', qrText: 'Scan to open on the App Store', downloadNote: 'Free · Requires iOS 16.0 or later',
+    footerRights: 'AIMBTI. All rights reserved.', footerMadeBy: 'Built by WeiProduct',
+    footerPrivacy: 'Privacy', footerTerms: 'Terms',
+    stickySub: 'Free personality test', stickyGet: 'Get'
+  },
+  'zh-CN': {
+    skip: '跳到主要内容',
+    navHow: '使用流程', navFeatures: '功能特点', navTypes: '16 型人格', navScreenshots: '应用截图', navFaq: '常见问题', navGet: '获取 App',
+    heroEyebrow: '✦ AI 驱动的人格洞察',
+    heroTitle: '发现你的人格类型',
+    heroSubtitle: '93 道题的 MBTI 测试，在 16 种类型中揭示你的类型——附带优势、兼容性，以及专属 AI 顾问。',
+    downloadBtn: 'App Store 下载', learnMore: '了解更多',
+    trust1: '🔒 隐私优先', trust2: '🧠 全部 16 型', trust3: '🌏 中英双语',
+    typeName: '提倡者', typeRole: '外交官',
+    dimI: '内向', dimE: '外向', dimN: '直觉', dimS: '实感',
+    dimF: '情感', dimT: '思考', dimJ: '判断', dimP: '展望',
+    advisorMsg: '作为 INFJ，本周把你的同理心专注在一个明确目标上。',
+    chipA: '✦ 16 种人格', chipB: '93 道题目',
+    proofRating: '生活 · 人格',
+    stat1: '道题目', stat2: '种人格类型', stat3: '个人顾问', stat4: '中英双语',
+    howTitle: '三步认识自己', howSub: '从答题到指导，全程 AI 驱动。',
+    step1Title: '回答 93 道题', step1Desc: '按自己的节奏，完成覆盖 MBTI 四个维度的 93 道科学量表题。',
+    step2Title: '获取类型与分析', step2Desc: '在 16 种类型中看到你的类型，附带优势、劣势以及与其他类型的兼容性。',
+    step3Title: '与 AI 顾问对话', step3Desc: '向你的专属 AI 顾问提问，获得为你的人格类型量身定制的指导。',
+    featuresTitle: '强大功能', featuresSub: '更好地了解自己所需的一切。',
+    feature1Title: '全面测试', feature1Desc: '93 道精心设计的问题，准确判定你的 MBTI 人格类型。',
+    feature2Title: 'AI 个人顾问', feature2Desc: '从贴合你类型的 AI 顾问那里获得个性化指导与洞察。',
+    feature3Title: '详细分析', feature3Desc: '了解你的优势、劣势，以及与其他类型的兼容性。',
+    feature4Title: '进度跟踪', feature4Desc: '保存测试结果，追踪你的人格画像随时间的变化。',
+    feature5Title: '中英双语', feature5Desc: '支持英文与简体中文，服务更广泛的用户。',
+    feature6Title: '隐私优先', feature6Desc: '数据本地存储，并采用行业标准安全保护。',
+    typesTitle: '全部 16 种人格类型', typesSub: '归入四大经典角色，你是哪一种？',
+    grpAnalysts: '分析家', grpAnalystsSub: '直觉 · 思考',
+    grpDiplomats: '外交官', grpDiplomatsSub: '直觉 · 情感',
+    grpSentinels: '守护者', grpSentinelsSub: '实感 · 判断',
+    grpExplorers: '探索者', grpExplorersSub: '实感 · 展望',
+    tINTJ: '建筑师', tINTP: '逻辑学家', tENTJ: '指挥官', tENTP: '辩论家',
+    tINFJ: '提倡者', tINFP: '调停者', tENFJ: '主人公', tENFP: '竞选者',
+    tISTJ: '物流师', tISFJ: '守卫者', tESTJ: '总经理', tESFJ: '执政官',
+    tISTP: '鉴赏家', tISFP: '探险家', tESTP: '企业家', tESFP: '表演者',
+    screenshotsTitle: '应用截图', screenshotsSub: '左右滑动，点击可放大查看。',
+    shot1: '开始测试', shot2: '测试说明', shot3: '查看结果', shot4: '浏览全部 16 型', shot5: '查看测试历史',
+    privacyTitle: '你的结果只属于你', privacyDesc: '无需账号。测试结果保存在你的设备本地，并采用行业标准安全保护。',
+    pp1: '本地存储', pp2: '无需账号', pp3: '无任何追踪', pp4: '无广告',
+    faqTitle: '常见问题',
+    q1: '测试如何判定我的人格类型？', a1: '你需要回答覆盖 MBTI 四个维度的 93 道精心设计的问题。系统会对作答进行评分，映射到 16 种人格类型之一，并给出每个维度的偏好分解。',
+    q2: 'AI 个人顾问是什么？', a2: '它是一个对话式顾问，会根据你的具体人格类型给出指导与洞察，帮助你在日常决策中发挥优势。',
+    q3: 'AIMBTI 支持中文吗？', a3: '支持。AIMBTI 完整支持英文与简体中文双语，你可以随时在应用内切换语言。',
+    q4: '我的数据是否私密？', a4: '你的结果保存在设备本地，并采用行业标准安全保护。我们不会出售你的个人数据。',
+    q5: '价格和系统要求如何？', a5: 'AIMBTI 免费下载，需要 iOS 16.0 或更高版本，支持 iPhone、iPad 或 iPod touch。',
+    downloadTitle: '立即下载 AIMBTI', downloadSubtitle: '今天就开始探索你的人格类型。',
+    badgeTop: '前往下载', qrText: '扫码前往 App Store', downloadNote: '免费 · 需要 iOS 16.0 或更高版本',
+    footerRights: 'AIMBTI. 保留所有权利。', footerMadeBy: '由 WeiProduct 打造',
+    footerPrivacy: '隐私政策', footerTerms: '服务条款',
+    stickySub: '免费人格测试', stickyGet: '获取'
+  }
+};
 
-function toggleLanguage() {
-    currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
-    updateLanguage();
-    
-    // Update button text
-    const langButton = document.querySelector('.lang-switch');
-    if (langButton) {
-        langButton.textContent = currentLanguage === 'en' ? '中文' : 'English';
-    }
+let currentLang = 'en';
+
+function applyLang(lang) {
+  currentLang = I18N[lang] ? lang : 'en';
+  const t = I18N[currentLang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if (t[k] !== undefined) el.textContent = t[k];
+  });
+  document.documentElement.lang = currentLang === 'zh-CN' ? 'zh-CN' : 'en';
+  const ls = document.getElementById('langSwitch');
+  if (ls) ls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  try { localStorage.setItem('lang', currentLang); } catch (e) {}
 }
 
-function updateLanguage() {
-    // Update all elements with data-en and data-zh attributes
-    const elements = document.querySelectorAll('[data-en][data-zh]');
-    elements.forEach(element => {
-        const text = element.getAttribute(`data-${currentLanguage}`);
-        if (text) {
-            element.textContent = text;
-        }
-    });
-    
-    // Update page title
-    document.title = currentLanguage === 'en' 
-        ? 'AIMBTI - AI-Powered MBTI Personality Test'
-        : 'AIMBTI - AI驱动的MBTI人格测试';
+function initLang() {
+  let saved;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  if (!saved) saved = (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh-CN' : 'en';
+  applyLang(saved);
 }
 
-function toggleMobileMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    if (navLinks) {
-        navLinks.classList.toggle('mobile-active');
-    }
+// ===== Theme =====
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const meta = document.getElementById('themeColorMeta');
+  if (meta) meta.setAttribute('content', theme === 'dark' ? '#0E0E14' : '#5B67CA');
+  try { localStorage.setItem('theme', theme); } catch (e) {}
+}
+function initTheme() {
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch (e) {}
+  if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  setTheme(saved);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.lang-switch')?.addEventListener('click', toggleLanguage);
-    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', toggleMobileMenu);
+// ===== Gallery =====
+function initGallery() {
+  const track = document.getElementById('galTrack');
+  if (!track) return;
+  const shots = Array.from(track.children);
+  const dotsWrap = document.getElementById('galDots');
+  const prev = document.getElementById('galPrev');
+  const next = document.getElementById('galNext');
 
-    const browserLang = navigator.language || navigator.userLanguage;
-    if (browserLang.includes('zh')) {
-        toggleLanguage();
-    }
-    
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                e.preventDefault();
-                const navHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = targetElement.offsetTop - navHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-    
-    const animatedElements = document.querySelectorAll('.feature-card, .screenshot-item, .download-card');
-    animatedElements.forEach(el => {
-        observer.observe(el);
-    });
+  shots.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'screenshot ' + (i + 1));
+    if (i === 0) b.classList.add('active');
+    b.addEventListener('click', () => shots[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' }));
+    dotsWrap.appendChild(b);
+  });
+  const dots = Array.from(dotsWrap.children);
 
-    let lastScroll = 0;
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-        
-        lastScroll = currentScroll;
+  function activeIndex() {
+    const c = track.scrollLeft + track.clientWidth / 2;
+    let best = 0, bd = Infinity;
+    shots.forEach((s, i) => {
+      const center = s.offsetLeft + s.offsetWidth / 2;
+      const d = Math.abs(center - c);
+      if (d < bd) { bd = d; best = i; }
     });
-    
-    document.querySelector('.navbar').style.transition = 'transform 0.3s ease';
+    return best;
+  }
+  track.addEventListener('scroll', () => {
+    const i = activeIndex();
+    dots.forEach((d, j) => d.classList.toggle('active', j === i));
+  }, { passive: true });
+
+  const step = () => (shots[1] ? shots[1].offsetLeft - shots[0].offsetLeft : 300);
+  if (prev) prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+  if (next) next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+
+  // Lightbox
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<button class="lightbox-close" aria-label="close">&times;</button><img alt="">';
+  document.body.appendChild(lb);
+  const lbImg = lb.querySelector('img');
+  const close = () => lb.classList.remove('open');
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lightbox-close')) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  track.querySelectorAll('.phone').forEach(p => {
+    p.addEventListener('click', () => {
+      const img = p.querySelector('img');
+      lbImg.src = img.src; lbImg.alt = img.alt;
+      lb.classList.add('open');
+    });
+  });
+}
+
+// ===== Scroll reveal =====
+function initReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach((el, i) => { el.style.transitionDelay = (Math.min(i, 6) * 0.05) + 's'; io.observe(el); });
+}
+
+// ===== Nav + sticky =====
+function initScroll() {
+  const nav = document.getElementById('navbar');
+  const sticky = document.getElementById('stickyCta');
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (nav) nav.classList.toggle('scrolled', y > 20);
+    if (sticky) sticky.classList.toggle('show', y > 620);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// ===== Init =====
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  initLang();
+  initGallery();
+  initReveal();
+  initScroll();
+
+  const yr = document.getElementById('currentYear');
+  if (yr) yr.textContent = new Date().getFullYear();
+
+  const ls = document.getElementById('langSwitch');
+  if (ls) ls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
+  const tt = document.getElementById('themeToggle');
+  if (tt) tt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+      const id = this.getAttribute('href');
+      if (id.length > 1) {
+        const target = document.querySelector(id);
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      }
+    });
+  });
 });
-
-document.addEventListener('keydown', function(e) {
-    const slider = document.querySelector('.screenshots-slider');
-    if (!slider) return;
-    
-    if (e.key === 'ArrowLeft') {
-        slider.scrollBy({ left: -300, behavior: 'smooth' });
-    } else if (e.key === 'ArrowRight') {
-        slider.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-});
-
-let touchStartX = 0;
-let touchEndX = 0;
-
-const slider = document.querySelector('.screenshots-slider');
-if (slider) {
-    slider.addEventListener('touchstart', function(e) {
-        touchStartX = e.changedTouches[0].screenX;
-    }, false);
-    
-    slider.addEventListener('touchend', function(e) {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    }, false);
-}
-
-function handleSwipe() {
-    const slider = document.querySelector('.screenshots-slider');
-    if (touchEndX < touchStartX - 50) {
-        slider.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-    if (touchEndX > touchStartX + 50) {
-        slider.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-}
