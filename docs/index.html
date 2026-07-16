@@ -56,6 +56,7 @@
     </script>
 </head>
 <body>
+    <div id="scrollProgress" aria-hidden="true"></div>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
     <nav class="navbar" id="navbar">
@@ -161,6 +162,7 @@
 
     <section id="how" class="how">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="navHow">How it works</span>
             <h2 class="section-title" data-i18n="howTitle">Know yourself in three steps</h2>
             <p class="section-sub" data-i18n="howSub">From questions to guidance — powered by AI.</p>
             <div class="steps">
@@ -186,8 +188,50 @@
         </div>
     </section>
 
+    <section id="try" class="tryit">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="tryEyebrow">Try it now</span>
+            <h2 class="section-title" data-i18n="tryTitle">Get a 60-second preview</h2>
+            <p class="section-sub" data-i18n="trySub">Pick one side of each pair — your four-letter code assembles as you go.</p>
+            <div class="try-wrap">
+                <div class="try-rows">
+                    <div class="try-row reveal" data-axis="EI">
+                        <button class="try-opt" type="button" data-val="E" aria-pressed="false"><span data-i18n="tryQ1a">A busy gathering recharges me</span></button>
+                        <span class="try-vs" aria-hidden="true">vs</span>
+                        <button class="try-opt" type="button" data-val="I" aria-pressed="true"><span data-i18n="tryQ1b">Quiet time recharges me</span></button>
+                    </div>
+                    <div class="try-row reveal" data-axis="SN">
+                        <button class="try-opt" type="button" data-val="S" aria-pressed="false"><span data-i18n="tryQ2a">I trust concrete facts</span></button>
+                        <span class="try-vs" aria-hidden="true">vs</span>
+                        <button class="try-opt" type="button" data-val="N" aria-pressed="true"><span data-i18n="tryQ2b">I follow patterns and hunches</span></button>
+                    </div>
+                    <div class="try-row reveal" data-axis="TF">
+                        <button class="try-opt" type="button" data-val="T" aria-pressed="false"><span data-i18n="tryQ3a">I decide with logic</span></button>
+                        <span class="try-vs" aria-hidden="true">vs</span>
+                        <button class="try-opt" type="button" data-val="F" aria-pressed="true"><span data-i18n="tryQ3b">I decide with my heart</span></button>
+                    </div>
+                    <div class="try-row reveal" data-axis="JP">
+                        <button class="try-opt" type="button" data-val="J" aria-pressed="true"><span data-i18n="tryQ4a">I like plans and lists</span></button>
+                        <span class="try-vs" aria-hidden="true">vs</span>
+                        <button class="try-opt" type="button" data-val="P" aria-pressed="false"><span data-i18n="tryQ4b">I keep my options open</span></button>
+                    </div>
+                </div>
+                <div class="try-result diplomat reveal" id="tryResult" aria-live="polite">
+                    <span class="try-code" id="tryCode">INFJ</span>
+                    <div class="try-meta">
+                        <span class="try-label" data-i18n="tryResultLabel">Your leaning</span>
+                        <strong class="try-nick" id="tryNick" data-i18n="tINFJ">Advocate</strong>
+                    </div>
+                    <p class="try-note" data-i18n="tryNote">Just a taste — the full test asks 93 questions.</p>
+                    <a href="https://apps.apple.com/app/id6749165632" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="tryCta">Take the full test in the app</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="navFeatures">Features</span>
             <h2 class="section-title" data-i18n="featuresTitle">Powerful Features</h2>
             <p class="section-sub" data-i18n="featuresSub">Everything you need to understand yourself better.</p>
             <div class="features-grid">
@@ -225,8 +269,43 @@
         </div>
     </section>
 
+    <section id="for" class="personas">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="personasEyebrow">For your moment</span>
+            <h2 class="section-title" data-i18n="personasTitle">One test, many moments</h2>
+            <p class="section-sub" data-i18n="personasSub">Wherever you are right now, your type is a useful lens.</p>
+            <div class="personas-grid">
+                <div class="persona-card reveal">
+                    <div class="persona-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8 7V5.5A2.5 2.5 0 0 1 10.5 3h3A2.5 2.5 0 0 1 16 5.5V7"/><path d="M3 12.5h18M12 11v3"/></svg></div>
+                    <h3 data-i18n="persona1Title">Job seekers &amp; interviews</h3>
+                    <p data-i18n="persona1Desc">Put words to your strengths before the big conversation.</p>
+                    <span class="persona-chip" data-i18n="persona1Chip">Strengths analysis</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.2-8.6C1.3 8.7 2.6 5.5 5.6 5.1 7.6 4.8 9.2 6 12 8.7c2.8-2.7 4.4-3.9 6.4-3.6 3 .4 4.3 3.6 2.8 6.3C19 15.6 12 20 12 20z"/></svg></div>
+                    <h3 data-i18n="persona2Title">Couples &amp; friends</h3>
+                    <p data-i18n="persona2Desc">Compare types and see where you naturally click.</p>
+                    <span class="persona-chip" data-i18n="persona2Chip">Compatibility</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19.5a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9.5" r="2.6"/><path d="M16.5 14.6a5.2 5.2 0 0 1 5 4.9"/></svg></div>
+                    <h3 data-i18n="persona3Title">Teams &amp; study groups</h3>
+                    <p data-i18n="persona3Desc">Understand work styles and avoid friction.</p>
+                    <span class="persona-chip" data-i18n="persona3Chip">AI Advisor</span>
+                </div>
+                <div class="persona-card reveal">
+                    <div class="persona-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 1 2.6 6.1"/><path d="M3.5 12H6M3.5 12V9.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+                    <h3 data-i18n="persona4Title">Personality enthusiasts</h3>
+                    <p data-i18n="persona4Desc">Retest over time and watch your profile evolve.</p>
+                    <span class="persona-chip" data-i18n="persona4Chip">Progress tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="types" class="types">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="navTypes">16 Types</span>
             <h2 class="section-title" data-i18n="typesTitle">All 16 Personality Types</h2>
             <p class="section-sub" data-i18n="typesSub">Grouped into the four canonical roles. Which one are you?</p>
             <div class="types-grid">
@@ -274,8 +353,47 @@
         </div>
     </section>
 
+    <section id="method" class="method">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="methodEyebrow">The method</span>
+            <h2 class="section-title" data-i18n="methodTitle">How 93 questions become your type</h2>
+            <p class="section-sub" data-i18n="methodSub">Four dichotomies. One four-letter code.</p>
+            <div class="method-flow reveal">
+                <span class="mf-node"><strong>93</strong><span data-i18n="flow1">questions</span></span>
+                <svg class="mf-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                <span class="mf-node"><strong>4</strong><span data-i18n="flow2">axes scored</span></span>
+                <svg class="mf-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                <span class="mf-node"><strong>16</strong><span data-i18n="flow3">types — one is yours</span></span>
+            </div>
+            <div class="method-grid">
+                <div class="axis reveal">
+                    <div class="axis-head"><h3 data-i18n="axis1Title">Energy</h3><span class="axis-desc" data-i18n="axis1Desc">Where you draw it from</span></div>
+                    <div class="axis-ends"><span data-i18n="dimE">Extraverted</span><span data-i18n="dimI">Introverted</span></div>
+                    <div class="axis-bar"><div class="axis-fill" style="--v:62%"></div></div>
+                </div>
+                <div class="axis reveal">
+                    <div class="axis-head"><h3 data-i18n="axis2Title">Information</h3><span class="axis-desc" data-i18n="axis2Desc">How you take it in</span></div>
+                    <div class="axis-ends"><span data-i18n="dimS">Observant</span><span data-i18n="dimN">Intuitive</span></div>
+                    <div class="axis-bar"><div class="axis-fill" style="--v:55%"></div></div>
+                </div>
+                <div class="axis reveal">
+                    <div class="axis-head"><h3 data-i18n="axis3Title">Decisions</h3><span class="axis-desc" data-i18n="axis3Desc">How you choose</span></div>
+                    <div class="axis-ends"><span data-i18n="dimT">Thinking</span><span data-i18n="dimF">Feeling</span></div>
+                    <div class="axis-bar"><div class="axis-fill" style="--v:70%"></div></div>
+                </div>
+                <div class="axis reveal">
+                    <div class="axis-head"><h3 data-i18n="axis4Title">Lifestyle</h3><span class="axis-desc" data-i18n="axis4Desc">How you organize</span></div>
+                    <div class="axis-ends"><span data-i18n="dimJ">Judging</span><span data-i18n="dimP">Prospecting</span></div>
+                    <div class="axis-bar"><div class="axis-fill" style="--v:58%"></div></div>
+                </div>
+            </div>
+            <p class="method-note reveal" data-i18n="methodNote">Every question maps to one axis — your four stronger sides spell your type.</p>
+        </div>
+    </section>
+
     <section id="screenshots" class="screenshots">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="shotsEyebrow">In the app</span>
             <h2 class="section-title" data-i18n="screenshotsTitle">App Screenshots</h2>
             <p class="section-sub" data-i18n="screenshotsSub">Swipe through — tap any shot to zoom in.</p>
             <div class="gallery">
@@ -311,6 +429,7 @@
     <section class="privacy">
         <div class="container privacy-card">
             <div class="privacy-lead">
+                <span class="eyebrow privacy-eyebrow" data-i18n="privacyEyebrow">Privacy</span>
                 <h2 data-i18n="privacyTitle">Your results stay with you</h2>
                 <p data-i18n="privacyDesc">No account required. Your test results are stored locally on your device and protected with industry-standard security.</p>
             </div>
@@ -323,8 +442,55 @@
         </div>
     </section>
 
+    <section id="compare" class="compare">
+        <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="cmpEyebrow">The difference</span>
+            <h2 class="section-title" data-i18n="cmpTitle">Deeper than a 10-question quiz</h2>
+            <p class="section-sub" data-i18n="cmpSub">How AIMBTI compares with a typical free web quiz.</p>
+            <div class="compare-scroll reveal">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" data-i18n="cmpCol0">What matters</th>
+                            <th scope="col" class="cmp-app">AIMBTI</th>
+                            <th scope="col" data-i18n="cmpColWeb">Typical free web quiz</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" data-i18n="cmpRow1">Depth</th>
+                            <td class="cmp-app"><span class="cmp-ic yes" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></span><span data-i18n="cmpRow1a">93 questions across all four dichotomies</span></td>
+                            <td><span class="cmp-ic no" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12"/></svg></span><span data-i18n="cmpRow1b">A handful of questions</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="cmpRow2">Guidance</th>
+                            <td class="cmp-app"><span class="cmp-ic yes" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></span><span data-i18n="cmpRow2a">Personal AI advisor you can chat with</span></td>
+                            <td><span class="cmp-ic no" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12"/></svg></span><span data-i18n="cmpRow2b">A static results page</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="cmpRow3">Privacy</th>
+                            <td class="cmp-app"><span class="cmp-ic yes" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></span><span data-i18n="cmpRow3a">Results stay on your device, no account</span></td>
+                            <td><span class="cmp-ic no" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12"/></svg></span><span data-i18n="cmpRow3b">Email required to unlock results</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="cmpRow4">Language</th>
+                            <td class="cmp-app"><span class="cmp-ic yes" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></span><span data-i18n="cmpRow4a">Full English + 中文</span></td>
+                            <td><span class="cmp-ic no" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12"/></svg></span><span data-i18n="cmpRow4b">Usually one language</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="cmpRow5">Over time</th>
+                            <td class="cmp-app"><span class="cmp-ic yes" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></span><span data-i18n="cmpRow5a">History and progress tracking</span></td>
+                            <td><span class="cmp-ic no" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 12h12"/></svg></span><span data-i18n="cmpRow5b">One-off result you lose</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" class="faq">
         <div class="container">
+            <span class="eyebrow section-eyebrow" data-i18n="faqEyebrow">Good to know</span>
             <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
             <div class="faq-list">
                 <details class="faq-item reveal"><summary data-i18n="q1">How does the test determine my personality type?</summary><p data-i18n="a1">You answer 93 carefully crafted questions across the four MBTI dichotomies. Your responses are scored and mapped to one of the 16 personality types, with a breakdown of each preference.</p></details>
@@ -363,10 +529,39 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a class="nav-brand" href="#" aria-label="AIMBTI">
+                        <span class="brand-icon" aria-hidden="true">
+                            <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B67CA"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg3)"/><circle cx="50" cy="45" r="21" fill="none" stroke="#fff" stroke-width="5"/><path d="M50 24v42M29 45h42" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="45" r="5.5" fill="#fff"/></svg>
+                        </span>
+                        <span class="brand-name">AIMBTI</span>
+                    </a>
+                    <p data-i18n="footerTagline">AI-powered MBTI test, private by design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footerProduct">Product</h4>
+                    <ul>
+                        <li><a href="#how" data-i18n="navHow">How it works</a></li>
+                        <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+                        <li><a href="#types" data-i18n="navTypes">16 Types</a></li>
+                        <li><a href="#screenshots" data-i18n="navScreenshots">Screenshots</a></li>
+                        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footerSupport">Support</h4>
+                    <ul>
+                        <li><a href="mailto:1597498880weiproduct@gmail.com" data-i18n="footerContact">Contact</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footerPrivacy">Privacy</a></li>
+                        <li><a href="terms-of-service.html" data-i18n="footerTerms">Terms</a></li>
+                        <li><a href="https://apps.apple.com/app/id6749165632" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
                 <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">AIMBTI. All rights reserved.</span></p>
                 <p data-i18n="footerMadeBy">Built by WeiProduct</p>
-                <p>Contact: <a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a> · <a href="privacy-policy.html" data-i18n="footerPrivacy">Privacy</a> · <a href="terms-of-service.html" data-i18n="footerTerms">Terms</a></p>
             </div>
         </div>
     </footer>

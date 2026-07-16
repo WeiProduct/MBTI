@@ -19,6 +19,14 @@ const I18N = {
     step1Title: 'Answer 93 questions', step1Desc: 'Work through 93 science-backed questions across the four MBTI dichotomies at your own pace.',
     step2Title: 'Get your type & analysis', step2Desc: 'See your type among all 16, with strengths, weaknesses, and compatibility with other types.',
     step3Title: 'Chat with your AI advisor', step3Desc: 'Ask your personal AI advisor for guidance tailored to your unique personality type.',
+    tryEyebrow: 'Try it now', tryTitle: 'Get a 60-second preview',
+    trySub: 'Pick one side of each pair — your four-letter code assembles as you go.',
+    tryQ1a: 'A busy gathering recharges me', tryQ1b: 'Quiet time recharges me',
+    tryQ2a: 'I trust concrete facts', tryQ2b: 'I follow patterns and hunches',
+    tryQ3a: 'I decide with logic', tryQ3b: 'I decide with my heart',
+    tryQ4a: 'I like plans and lists', tryQ4b: 'I keep my options open',
+    tryResultLabel: 'Your leaning', tryNote: 'Just a taste — the full test asks 93 questions.',
+    tryCta: 'Take the full test in the app',
     featuresTitle: 'Powerful Features', featuresSub: 'Everything you need to understand yourself better.',
     feature1Title: 'Comprehensive Test', feature1Desc: '93 carefully crafted questions accurately determine your MBTI personality type.',
     feature2Title: 'AI Personal Advisor', feature2Desc: 'Get personalized guidance and insights from an AI advisor tuned to your type.',
@@ -26,6 +34,12 @@ const I18N = {
     feature4Title: 'Progress Tracking', feature4Desc: 'Save your results and track how your personality profile evolves over time.',
     feature5Title: 'Bilingual Support', feature5Desc: 'Available in both English and Simplified Chinese for a wider audience.',
     feature6Title: 'Privacy First', feature6Desc: 'Your data is stored locally and protected with industry-standard security.',
+    personasEyebrow: 'For your moment', personasTitle: 'One test, many moments',
+    personasSub: 'Wherever you are right now, your type is a useful lens.',
+    persona1Title: 'Job seekers & interviews', persona1Desc: 'Put words to your strengths before the big conversation.', persona1Chip: 'Strengths analysis',
+    persona2Title: 'Couples & friends', persona2Desc: 'Compare types and see where you naturally click.', persona2Chip: 'Compatibility',
+    persona3Title: 'Teams & study groups', persona3Desc: 'Understand work styles and avoid friction.', persona3Chip: 'AI Advisor',
+    persona4Title: 'Personality enthusiasts', persona4Desc: 'Retest over time and watch your profile evolve.', persona4Chip: 'Progress tracking',
     typesTitle: 'All 16 Personality Types', typesSub: 'Grouped into the four canonical roles. Which one are you?',
     grpAnalysts: 'Analysts', grpAnalystsSub: 'Intuitive · Thinking',
     grpDiplomats: 'Diplomats', grpDiplomatsSub: 'Intuitive · Feeling',
@@ -35,10 +49,29 @@ const I18N = {
     tINFJ: 'Advocate', tINFP: 'Mediator', tENFJ: 'Protagonist', tENFP: 'Campaigner',
     tISTJ: 'Logistician', tISFJ: 'Defender', tESTJ: 'Executive', tESFJ: 'Consul',
     tISTP: 'Virtuoso', tISFP: 'Adventurer', tESTP: 'Entrepreneur', tESFP: 'Entertainer',
+    methodEyebrow: 'The method', methodTitle: 'How 93 questions become your type',
+    methodSub: 'Four dichotomies. One four-letter code.',
+    flow1: 'questions', flow2: 'axes scored', flow3: 'types — one is yours',
+    axis1Title: 'Energy', axis1Desc: 'Where you draw it from',
+    axis2Title: 'Information', axis2Desc: 'How you take it in',
+    axis3Title: 'Decisions', axis3Desc: 'How you choose',
+    axis4Title: 'Lifestyle', axis4Desc: 'How you organize',
+    methodNote: 'Every question maps to one axis — your four stronger sides spell your type.',
+    shotsEyebrow: 'In the app',
     screenshotsTitle: 'App Screenshots', screenshotsSub: 'Swipe through — tap any shot to zoom in.',
     shot1: 'Start the test', shot2: 'How the test works', shot3: 'See your results', shot4: 'Browse all 16 types', shot5: 'Track your test history',
+    privacyEyebrow: 'Privacy',
     privacyTitle: 'Your results stay with you', privacyDesc: 'No account required. Your test results are stored locally on your device and protected with industry-standard security.',
     pp1: 'Stored on-device', pp2: 'No account needed', pp3: 'Zero tracking', pp4: 'No ads',
+    cmpEyebrow: 'The difference', cmpTitle: 'Deeper than a 10-question quiz',
+    cmpSub: 'How AIMBTI compares with a typical free web quiz.',
+    cmpCol0: 'What matters', cmpColWeb: 'Typical free web quiz',
+    cmpRow1: 'Depth', cmpRow1a: '93 questions across all four dichotomies', cmpRow1b: 'A handful of questions',
+    cmpRow2: 'Guidance', cmpRow2a: 'Personal AI advisor you can chat with', cmpRow2b: 'A static results page',
+    cmpRow3: 'Privacy', cmpRow3a: 'Results stay on your device, no account', cmpRow3b: 'Email required to unlock results',
+    cmpRow4: 'Language', cmpRow4a: 'Full English + 中文', cmpRow4b: 'Usually one language',
+    cmpRow5: 'Over time', cmpRow5a: 'History and progress tracking', cmpRow5b: 'One-off result you lose',
+    faqEyebrow: 'Good to know',
     faqTitle: 'Frequently Asked Questions',
     q1: 'How does the test determine my personality type?', a1: 'You answer 93 carefully crafted questions across the four MBTI dichotomies. Your responses are scored and mapped to one of the 16 personality types, with a breakdown of each preference.',
     q2: 'What is the AI personal advisor?', a2: 'It is a conversational advisor that gives guidance and insights tailored to your specific personality type, helping you apply your strengths to everyday decisions.',
@@ -49,6 +82,8 @@ const I18N = {
     badgeTop: 'Download on the', qrText: 'Scan to open on the App Store', downloadNote: 'Free · Requires iOS 16.0 or later',
     footerRights: 'AIMBTI. All rights reserved.', footerMadeBy: 'Built by WeiProduct',
     footerPrivacy: 'Privacy', footerTerms: 'Terms',
+    footerTagline: 'AI-powered MBTI test, private by design.',
+    footerProduct: 'Product', footerSupport: 'Support', footerContact: 'Contact',
     stickySub: 'Free personality test', stickyGet: 'Get'
   },
   'zh-CN': {
@@ -70,6 +105,14 @@ const I18N = {
     step1Title: '回答 93 道题', step1Desc: '按自己的节奏，完成覆盖 MBTI 四个维度的 93 道科学量表题。',
     step2Title: '获取类型与分析', step2Desc: '在 16 种类型中看到你的类型，附带优势、劣势以及与其他类型的兼容性。',
     step3Title: '与 AI 顾问对话', step3Desc: '向你的专属 AI 顾问提问，获得为你的人格类型量身定制的指导。',
+    tryEyebrow: '立即体验', tryTitle: '60 秒速览你的倾向',
+    trySub: '每组选择更像你的一边，四字母代码即刻成形。',
+    tryQ1a: '热闹的聚会让我充电', tryQ1b: '独处让我充电',
+    tryQ2a: '我更相信具体事实', tryQ2b: '我更相信直觉和模式',
+    tryQ3a: '我用逻辑做决定', tryQ3b: '我用感受做决定',
+    tryQ4a: '我喜欢计划和清单', tryQ4b: '我喜欢保留选择',
+    tryResultLabel: '你的倾向', tryNote: '这只是初体验——完整测试包含 93 道题。',
+    tryCta: '去 App 完成完整测试',
     featuresTitle: '强大功能', featuresSub: '更好地了解自己所需的一切。',
     feature1Title: '全面测试', feature1Desc: '93 道精心设计的问题，准确判定你的 MBTI 人格类型。',
     feature2Title: 'AI 个人顾问', feature2Desc: '从贴合你类型的 AI 顾问那里获得个性化指导与洞察。',
@@ -77,6 +120,12 @@ const I18N = {
     feature4Title: '进度跟踪', feature4Desc: '保存测试结果，追踪你的人格画像随时间的变化。',
     feature5Title: '中英双语', feature5Desc: '支持英文与简体中文，服务更广泛的用户。',
     feature6Title: '隐私优先', feature6Desc: '数据本地存储，并采用行业标准安全保护。',
+    personasEyebrow: '适用场景', personasTitle: '一次测试，多种时刻',
+    personasSub: '无论你正处于什么阶段，人格类型都是有用的视角。',
+    persona1Title: '求职与面试', persona1Desc: '在重要面试前，把你的优势说清楚。', persona1Chip: '优势分析',
+    persona2Title: '情侣与朋友', persona2Desc: '对比类型，看你们在哪里天然契合。', persona2Chip: '兼容性分析',
+    persona3Title: '团队与学习小组', persona3Desc: '理解彼此的工作风格，减少摩擦。', persona3Chip: 'AI 顾问',
+    persona4Title: '人格爱好者', persona4Desc: '定期重测，见证画像随时间变化。', persona4Chip: '进度跟踪',
     typesTitle: '全部 16 种人格类型', typesSub: '归入四大经典角色，你是哪一种？',
     grpAnalysts: '分析家', grpAnalystsSub: '直觉 · 思考',
     grpDiplomats: '外交官', grpDiplomatsSub: '直觉 · 情感',
@@ -86,10 +135,29 @@ const I18N = {
     tINFJ: '提倡者', tINFP: '调停者', tENFJ: '主人公', tENFP: '竞选者',
     tISTJ: '物流师', tISFJ: '守卫者', tESTJ: '总经理', tESFJ: '执政官',
     tISTP: '鉴赏家', tISFP: '探险家', tESTP: '企业家', tESFP: '表演者',
+    methodEyebrow: '测试原理', methodTitle: '93 道题如何变成你的类型',
+    methodSub: '四个维度，一个四字母代码。',
+    flow1: '道题目', flow2: '个维度评分', flow3: '种类型之一属于你',
+    axis1Title: '能量来源', axis1Desc: '你从哪里获得能量',
+    axis2Title: '信息获取', axis2Desc: '你如何接收信息',
+    axis3Title: '决策方式', axis3Desc: '你如何做选择',
+    axis4Title: '生活方式', axis4Desc: '你如何安排生活',
+    methodNote: '每道题对应一个维度，四个更强的偏好拼出你的类型。',
+    shotsEyebrow: '真实界面',
     screenshotsTitle: '应用截图', screenshotsSub: '左右滑动，点击可放大查看。',
     shot1: '开始测试', shot2: '测试说明', shot3: '查看结果', shot4: '浏览全部 16 型', shot5: '查看测试历史',
+    privacyEyebrow: '隐私承诺',
     privacyTitle: '你的结果只属于你', privacyDesc: '无需账号。测试结果保存在你的设备本地，并采用行业标准安全保护。',
     pp1: '本地存储', pp2: '无需账号', pp3: '无任何追踪', pp4: '无广告',
+    cmpEyebrow: '独特之处', cmpTitle: '比 10 道题的小测验更深入',
+    cmpSub: 'AIMBTI 与常见免费网页测验的对比。',
+    cmpCol0: '关注点', cmpColWeb: '常见免费网页测验',
+    cmpRow1: '深度', cmpRow1a: '覆盖四个维度的 93 道题', cmpRow1b: '寥寥几题',
+    cmpRow2: '指导', cmpRow2a: '可对话的 AI 个人顾问', cmpRow2b: '静态结果页',
+    cmpRow3: '隐私', cmpRow3a: '结果留在设备本地，无需账号', cmpRow3b: '需留邮箱才能看结果',
+    cmpRow4: '语言', cmpRow4a: '完整中英双语', cmpRow4b: '通常仅单语',
+    cmpRow5: '长期', cmpRow5a: '历史记录与进度追踪', cmpRow5b: '一次性结果，用完即失',
+    faqEyebrow: '你可能想问',
     faqTitle: '常见问题',
     q1: '测试如何判定我的人格类型？', a1: '你需要回答覆盖 MBTI 四个维度的 93 道精心设计的问题。系统会对作答进行评分，映射到 16 种人格类型之一，并给出每个维度的偏好分解。',
     q2: 'AI 个人顾问是什么？', a2: '它是一个对话式顾问，会根据你的具体人格类型给出指导与洞察，帮助你在日常决策中发挥优势。',
@@ -100,6 +168,8 @@ const I18N = {
     badgeTop: '前往下载', qrText: '扫码前往 App Store', downloadNote: '免费 · 需要 iOS 16.0 或更高版本',
     footerRights: 'AIMBTI. 保留所有权利。', footerMadeBy: '由 WeiProduct 打造',
     footerPrivacy: '隐私政策', footerTerms: '服务条款',
+    footerTagline: 'AI 驱动的 MBTI 测试，隐私优先。',
+    footerProduct: '产品', footerSupport: '支持', footerContact: '联系我们',
     stickySub: '免费人格测试', stickyGet: '获取'
   }
 };
@@ -196,6 +266,46 @@ function initGallery() {
   });
 }
 
+// ===== Type-preview quiz =====
+function initQuiz() {
+  const rows = document.querySelectorAll('.try-row');
+  if (!rows.length) return;
+  const codeEl = document.getElementById('tryCode');
+  const nickEl = document.getElementById('tryNick');
+  const card = document.getElementById('tryResult');
+  const state = { EI: 'I', SN: 'N', TF: 'F', JP: 'J' };
+  const ROLES = ['analyst', 'diplomat', 'sentinel', 'explorer'];
+
+  function roleOf(code) {
+    if (code[1] === 'N') return code[2] === 'T' ? 'analyst' : 'diplomat';
+    return code[3] === 'J' ? 'sentinel' : 'explorer';
+  }
+  function render() {
+    const code = state.EI + state.SN + state.TF + state.JP;
+    if (codeEl) codeEl.textContent = code;
+    if (nickEl) {
+      nickEl.setAttribute('data-i18n', 't' + code);
+      nickEl.textContent = I18N[currentLang]['t' + code];
+    }
+    if (card) {
+      ROLES.forEach(r => card.classList.remove(r));
+      card.classList.add(roleOf(code));
+    }
+  }
+  rows.forEach(row => {
+    const axis = row.getAttribute('data-axis');
+    const opts = row.querySelectorAll('.try-opt');
+    opts.forEach(btn => {
+      btn.addEventListener('click', () => {
+        opts.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+        state[axis] = btn.getAttribute('data-val');
+        render();
+      });
+    });
+  });
+  render();
+}
+
 // ===== Scroll reveal =====
 function initReveal() {
   const els = document.querySelectorAll('.reveal');
@@ -212,10 +322,15 @@ function initReveal() {
 function initScroll() {
   const nav = document.getElementById('navbar');
   const sticky = document.getElementById('stickyCta');
+  const prog = document.getElementById('scrollProgress');
   const onScroll = () => {
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (sticky) sticky.classList.toggle('show', y > 620);
+    if (prog) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (max > 0 ? Math.min(100, (y / max) * 100) : 0) + '%';
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -225,6 +340,7 @@ function initScroll() {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLang();
+  initQuiz();
   initGallery();
   initReveal();
   initScroll();
